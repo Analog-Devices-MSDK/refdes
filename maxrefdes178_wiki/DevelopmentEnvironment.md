@@ -21,7 +21,7 @@ After the installation of MSDK, on Windows, the MSYS shell (included in the MSDK
 Download MAXREFDES178# from GitHub with submodules:
 
 ```
- git clone --recurse-submodules git@github.com:MaximIntegratedAI/refdes.git
+ git clone --recurse-submodules git@github.com:analogdevicesinc/MAX78xxx-RefDes.git refdes
 ```
 
 <p align="center"><img src="images/wiki_developmentenvironmentclonedrepo.png" width="450" alt="MAXDAP TYPE-C" title=""></p>

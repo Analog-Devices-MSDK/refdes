@@ -25,8 +25,8 @@ App-Switcher uses **msbl** files to load MAX32666, MAX78000-Video and MAX78000-A
 
 * Download the latest maxrefdes178_firmware.zip release from:
 
-  * https://github.com/MaximIntegratedAI/refdes/releases for stable releases.
-  * https://github.com/MaximIntegratedAI/refdes/actions/workflows/maxrefdes178.yml for GitHub Action builds.
+  * https://github.com/analogdevicesinc/MAX78xxx-RefDes/releases for stable releases.
+  * https://github.com/analogdevicesinc/MAX78xxx-RefDes/refdes/actions/workflows/maxrefdes178.yml for GitHub Action builds.
 
 * Extract zip content to the micro SD card root directory.
 

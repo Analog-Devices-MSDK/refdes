@@ -45,9 +45,9 @@ If DAPLink debugger/programmer interface is used, the programming should be done
   |Releases|
   |---|
   |Stable Releases:|
-  |https://github.com/MaximIntegratedAI/refdes/releases|
+  |https://github.com/analogdevicesinc/MAX78xxx-RefDes/releases|
   |Github Actions Builds:|
-  |https://github.com/MaximIntegratedAI/refdes/actions/workflows/maxrefdes178.yml|
+  |https://github.com/analogdevicesinc/MAX78xxx-RefDes/actions/workflows/maxrefdes178.yml|
 
 <br><br>
 

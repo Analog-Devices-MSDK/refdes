@@ -35,7 +35,7 @@ The schematic and BOM can be found in the MAXREFDES178# Datasheet. See https://w
 
 ## Powering Up the MAXREFDES178# for the First Time
 
-[![MAXREFDES178](https://github.com/MaximIntegratedAI/refdes/actions/workflows/maxrefdes178.yml/badge.svg?branch=main)](https://github.com/MaximIntegratedAI/refdes/actions/workflows/maxrefdes178.yml)
+[![MAXREFDES178](https://github.com/analogdevicesinc/MAX78xxx-RefDes/actions/workflows/maxrefdes178.yml/badge.svg?branch=main)](https://github.com/analogdevicesinc/MAX78xxx-RefDes/actions/workflows/maxrefdes178.yml)
 
 - *Some* units have a protective film installed covering the camera. Remove the film:
 
@@ -85,7 +85,7 @@ On Windows, the MSYS shell (included in the MSDK) can be used to build examples.
 Download MAXREFDES178# from GitHub with submodules:
 
 ```
- git clone --recurse-submodules git@github.com:MaximIntegratedAI/refdes.git
+ git clone --recurse-submodules git@github.com:analogdevicesinc/MAX78xxx-RefDes.git refdes
 ```
 
 ![](codebase.png)
@@ -219,8 +219,8 @@ or
 
   - Download latest maxrefdes178_firmware.zip release and extract the content of the zip file.
 
-    - https://github.com/MaximIntegratedAI/refdes/releases for stable releases.
-    - https://github.com/MaximIntegratedAI/refdes/actions/workflows/maxrefdes178.yml for GitHub Action builds.
+    - https://github.com/analogdevicesinc/MAX78xxx-RefDes/releases for stable releases.
+    - https://github.com/analogdevicesinc/MAX78xxx-RefDes/actions/workflows/maxrefdes178.yml for GitHub Action builds.
 
   - Open MinGW console, cd into the directory where zip is extracted and cd into one of the demo directory:
 
@@ -346,8 +346,8 @@ App-Switcher uses msbl file to load MAX32666, MAX78000 Video and MAX78000 Audio 
 
 - Format SD card with FAT32 file system. **Make sure to back up your SD Card content before formatting!**
 - Download latest maxrefdes178_firmware.zip release from:
-  - https://github.com/MaximIntegratedAI/refdes/releases for stable releases.
-  - https://github.com/MaximIntegratedAI/refdes/actions/workflows/maxrefdes178.yml for GitHub Action builds.
+  - https://github.com/analogdevicesinc/MAX78xxx-RefDes/releases for stable releases.
+  - https://github.com/analogdevicesinc/MAX78xxx-RefDes/actions/workflows/maxrefdes178.yml for GitHub Action builds.
 - Extract zip content to SD card top directory.
 
   ![](sd_card.png)
@@ -524,7 +524,7 @@ If the programming of Audio or Video Firmware fails repeatedly (due to incomplet
 1. Press and hold the SW on MAX32625PICO and then connect it to the USB port to enter the maintenance mode. A MAINTENANCE drive should appear.
 
 2. Drag and drop the latest bin firmware to the MAINTENANCES drive. The latest DAPLINK binary can be found here:
-   https://github.com/MaximIntegratedAI/MaximAI_Documentation/raw/master/MAX78000_Feather/MAX32625PICO_files/max32625_max78000fthr_if_crc_v1.0.2.bin
+   https://github.com/analogdevicesinc/MaximAI_Documentation/raw/master/MAX78000_Feather/MAX32625PICO_files/max32625_max78000fthr_if_crc_v1.0.2.bin
 
 3. Following the Drag-and-Drop, the debug adapter should reboot and reconnect as a drive named DAPLINK.
 
