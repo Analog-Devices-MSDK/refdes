@@ -37,7 +37,7 @@ extern "C" {
  Handle Ranges
 **************************************************************************************************/
 /** \name GAP Service Handles
- * \note GAP -- RPAO characterstic added only when DM Privacy enabled
+ * \note GAP -- RPAO characteristic added only when DM Privacy enabled
  */
 /**@{*/
 #define GAP_START_HDL               0x01               /*!< \brief GAP start handle */

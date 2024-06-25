@@ -329,7 +329,7 @@ lctrBigCtx_t *lctrFindBigBySyncHandle(uint16_t syncHandle)
 /*!
  *  \brief      Check is current BIG synchronization in progress.
  *
- *  \return     TRUE if syncrhonizing in progres, FALSE otherwise.
+ *  \return     TRUE if synchronizing in progress, FALSE otherwise.
  */
 /*************************************************************************************************/
 bool_t lctrIsBigSynchronizing(void)

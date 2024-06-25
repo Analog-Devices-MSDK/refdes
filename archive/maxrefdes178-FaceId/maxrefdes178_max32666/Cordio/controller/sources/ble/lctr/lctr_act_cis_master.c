@@ -99,7 +99,7 @@ static void lctrCalCeRefNotFirstCis(lctrConnCtx_t *pCtx, lctrCisCtx_t *pCisCtx)
 
   aclRefTime = pConnBod->dueUsec + (pCisCtx->ceRef - pCtx->eventCounter) * LCTR_CONN_IND_US(pCtx->connInterval);
 
-  /* Find the reference event when CIS shall be transfered. */
+  /* Find the reference event when CIS shall be transferred. */
   pCisCtx->cisCeRef = 0;
 
   while (result == FALSE)

@@ -170,7 +170,7 @@ typedef struct meshPrvBrSessionInfo_tag
   uint8_t       localTranNum;                      /*!< Local transaction number used on the
                                                     *   PB-ADV link.
                                                     */
-  uint32_t      linkId;                            /*!< PB-ADV link indentifier. */
+  uint32_t      linkId;                            /*!< PB-ADV link identifier. */
   uint8_t       *pDeviceUuid;                      /*!< PB-ADV Device UUID. Used by Provisioning
                                                     *   Client to repeat the link open procedure.
                                                     */
@@ -1476,7 +1476,7 @@ void MeshPrvBrInit(void)
 {
   MESH_TRACE_INFO0("MESH PRV BR: init");
 
-  /* Set bearer inteface as invalid */
+  /* Set bearer interface as invalid */
   prvBrCb.advIfId = MESH_BR_INVALID_INTERFACE_ID;
   prvBrCb.gattIfId = MESH_BR_INVALID_INTERFACE_ID;
 

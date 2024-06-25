@@ -133,7 +133,7 @@ void DmSecSetOob(dmConnId_t connId, dmSecLescOobCfg_t *pCfg)
 
 /*************************************************************************************************/
 /*!
- *  \brief  This function calcualtes the local random and confirm values used in LESC OOB pairing.
+ *  \brief  This function calculates the local random and confirm values used in LESC OOB pairing.
  *          The operation's result is posted as a DM_SEC_CALC_OOB_IND event to the application's DM
  *          callback handler.  The local rand and confirm values are exchanged with the peer via
  *          out-of-band (OOB) methods and passed into the DmSecSetOob after DM_CONN_OPEN_IND.
@@ -162,7 +162,7 @@ void DmSecCalcOobReq(uint8_t *pRand, uint8_t *pPubKeyX)
     {
       uint8_t *pCatBuf = pCmacText;
 
-      /* Concatinate PKx, PKx, 0x00 */
+      /* Concatenate PKx, PKx, 0x00 */
       pCatBuf = SmpScCat(pCatBuf, pPubKeyX, SMP_PUB_KEY_LEN);
       pCatBuf = SmpScCat(pCatBuf, pPubKeyX, SMP_PUB_KEY_LEN);
       *pCatBuf = 0;
@@ -299,7 +299,7 @@ void DmSecCompareRsp(dmConnId_t connId, bool_t valid)
 /*!
  *  \brief  This function returns the 6-digit compare value for the specified 128-bit confirm value.
  *
- *  \param  pConfirm    Pointer to 128-bit comfirm value.
+ *  \param  pConfirm    Pointer to 128-bit confirm value.
  *
  *  \return Six-digit compare value.
  */

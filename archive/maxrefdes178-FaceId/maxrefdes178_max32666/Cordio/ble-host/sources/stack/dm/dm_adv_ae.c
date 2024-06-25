@@ -387,7 +387,7 @@ static void dmAdvConfig(uint8_t advHandle, uint8_t advType, uint8_t peerAddrType
         break;
 
       default:
-        /* unkown advertising type */
+        /* unknown advertising type */
         break;
     }
 
@@ -1199,7 +1199,7 @@ void dmExtAdvActTimeout(dmAdvMsg_t *pMsg)
 
 /*************************************************************************************************/
 /*!
- *  \brief  DM extended advertising HCI adv enbale command complete event handler.
+ *  \brief  DM extended advertising HCI adv enable command complete event handler.
  *
  *  \param  pEvent  Pointer to HCI callback event structure.
  *
@@ -1360,7 +1360,7 @@ void dmExtAdvHciHandler(hciEvt_t *pEvent)
       /* else if low duty cycle directed advertising failed to create connection */
       else if (pEvent->leAdvSetTerm.status != HCI_SUCCESS)
       {
-        /* generate connection compelete event */
+        /* generate connection complete event */
         dmAdvGenConnCmpl(advHandle, pEvent->leAdvSetTerm.status);
       }
     }
@@ -1542,7 +1542,7 @@ void dmPerAdvReset(void)
 /*!
  *  \brief  Start directed extended advertising.
  *
- *  \param  connId        Connection identifer.
+ *  \param  connId        Connection identifier.
  *  \param  advHandle     Advertising handle.
  *  \param  advType       Advertising type.
  *  \param  duration      Advertising duration (in milliseconds).
@@ -1575,7 +1575,7 @@ void dmExtAdvStartDirected(dmConnId_t connId, uint8_t advHandle, uint8_t advType
 /*!
  *  \brief  Stop directed extended advertising.
  *
- *  \param  connId        Connection identifer.
+ *  \param  connId        Connection identifier.
  *
  *  \return None.
  */
@@ -1603,7 +1603,7 @@ void dmExtAdvStopDirected(dmConnId_t connId)
 /*!
  *  \brief  This function is called when a connection is established from directed advertising.
  *
- *  \param  connId        Connection identifer.
+ *  \param  connId        Connection identifier.
  *
  *  \return None.
  */
@@ -1617,7 +1617,7 @@ void dmExtAdvConnected(dmConnId_t connId)
 /*!
  *  \brief  This function is called when a directed advertising connection fails.
  *
- *  \param  connId        Connection identifer.
+ *  \param  connId        Connection identifier.
  *
  *  \return None.
  */

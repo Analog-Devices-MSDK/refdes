@@ -115,7 +115,7 @@ typedef BbBleSnifferPkt_t* (*bbSnifferGetPktFn_t)(void);
 typedef struct
 {
   uint16_t               bufIdx;                          /*!< Current packet buffer index. */
-  BbBleSnifferPkt_t      pktBuf[BB_SNIFFER_MAX_NUM_BUF];  /*!< Sotrage for packet buffer. */
+  BbBleSnifferPkt_t      pktBuf[BB_SNIFFER_MAX_NUM_BUF];  /*!< Storage for packet buffer. */
 } BbBleSnifferHciCtx_t;
 
 /*! \brief   Sniffer context. */

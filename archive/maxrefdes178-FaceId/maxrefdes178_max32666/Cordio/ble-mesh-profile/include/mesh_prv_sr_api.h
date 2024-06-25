@@ -55,7 +55,7 @@ enum meshPrvSrEvtTypes
                                                             *   event is generated only when PB-ADV is
                                                             *   used for PB-GATT the link is already open.
                                                             */
-  MESH_PRV_SR_OUTPUT_OOB_EVENT,                            /*!< Device should output the OOB informations
+  MESH_PRV_SR_OUTPUT_OOB_EVENT,                            /*!< Device should output the OOB information
                                                             *   as specified by the event parameters.
                                                             *   See ::meshPrvSrEvtOutputOob_t
                                                             */

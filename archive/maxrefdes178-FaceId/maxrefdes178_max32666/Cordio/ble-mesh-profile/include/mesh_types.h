@@ -228,7 +228,7 @@ typedef struct meshRelayRetransState_tag
                                                         */
 } meshRelayRetransState_t;
 
-/*! \brief Structure to store Model Publication state informations */
+/*! \brief Structure to store Model Publication state information */
 typedef struct meshModelPublicationParams_tag
 {
   uint16_t                        publishAppKeyIndex;       /*!< Publish AppKey Index */

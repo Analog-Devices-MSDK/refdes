@@ -720,7 +720,7 @@ void meshCfgMsgPackHbSubSet(uint8_t *pBuf, meshHbSub_t *pHbSub)
 
 /*************************************************************************************************/
 /*!
- *  \brief      Unpacks the Heartbeat Subcription State.
+ *  \brief      Unpacks the Heartbeat Subscription State.
  *
  *  \param[in]  pBuf    Pointer to buffer where the packed state is stored.
  *  \param[out] pHbSub  Pointer to memory where to store a Heartbeart Subscription State.
@@ -740,7 +740,7 @@ void meshCfgMsgUnpackHbSubSet(uint8_t *pBuf, meshHbSub_t *pHbSub)
 
 /*************************************************************************************************/
 /*!
- *  \brief      Pack the Heartbeat Subcription State Status.
+ *  \brief      Pack the Heartbeat Subscription State Status.
  *
  *  \param[out] pBuf    Pointer to buffer where to store the packed state.
  *  \param[in]  pHbSub  Pointer to a Heartbeart Subscription State.
@@ -763,7 +763,7 @@ void meshCfgMsgPackHbSubState(uint8_t *pBuf, meshHbSub_t *pHbSub)
 
 /*************************************************************************************************/
 /*!
- *  \brief      Unpacks the Heartbeat Subcription State Status.
+ *  \brief      Unpacks the Heartbeat Subscription State Status.
  *
  *  \param[in]  pBuf    Pointer to buffer where the packed state is stored.
  *  \param[out] pHbSub  Pointer to memory where to store a Heartbeart Subscription State.

@@ -2,7 +2,7 @@
 /*!
  *  \file
  *
- *  \brief  Configuration Model commmon implementation.
+ *  \brief  Configuration Model common implementation.
  *
  *  Copyright (c) 2018-2019 Arm Ltd. All Rights Reserved.
  *

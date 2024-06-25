@@ -210,7 +210,7 @@ typedef struct meshCb_tag
   meshWsfMsgHandlerCback_t   friendshipMsgCback;  /*!< Mesh Friendship WSF message callback */
   meshWsfMsgHandlerCback_t   cfgMdlClMsgCback;    /*!< Mesh Config Client WSF message callback */
   meshWsfMsgHandlerCback_t   accMsgCback;         /*!< Mesh Access Layer WSF message callback */
-  meshWsfMsgHandlerCback_t   hbMsgCback;          /*!< Mesh Hearbeat WSF message callback */
+  meshWsfMsgHandlerCback_t   hbMsgCback;          /*!< Mesh Heartbeat WSF message callback */
   meshWsfMsgHandlerCback_t   sarRxMsgCback;       /*!< Mesh SAR Rx WSF message callback */
   meshWsfMsgHandlerCback_t   sarTxMsgCback;       /*!< Mesh SAR Tx WSF message callback */
   meshWsfMsgHandlerCback_t   nwkMsgCback;         /*!< Mesh Network WSF message callback */

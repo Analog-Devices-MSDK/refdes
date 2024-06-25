@@ -270,12 +270,12 @@ static void eattsConnCback(attCcb_t *pCcb, dmEvt_t *pDmEvt)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Calculate the length of a list of handle length value tupples.
+ *  \brief  Calculate the length of a list of handle length value tuples.
  *
  *  \param  numTuples   The number of tuples.
  *  \param  pTupleList  Pointer to a list of tuples.
  *
- *  \return length of tupples.
+ *  \return length of tuples.
  */
 /*************************************************************************************************/
 static uint16_t eattMultiNtfLen(uint16_t numTuples, eattTuple_t *pTupleList)

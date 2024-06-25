@@ -154,7 +154,7 @@ void HciLeReadChanMapCmd(uint16_t handle)
 
 /*************************************************************************************************/
 /*!
- *  \brief  HCI LE read local supported feautre command.
+ *  \brief  HCI LE read local supported feature command.
  *
  *  \return None.
  */

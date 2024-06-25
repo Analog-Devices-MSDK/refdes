@@ -512,7 +512,7 @@ uint8_t lctrMstAuxInitiateBuildOp(lctrExtScanCtx_t *pExtInitCtx, LlConnSpec_t *p
 
   /*** BLE Scan Setup: Rx chain packet ***/
 
-  /* pAuxScan->rxAuxChainCback = NULL; */    /* No CHAIN_IND when inititating. */
+  /* pAuxScan->rxAuxChainCback = NULL; */    /* No CHAIN_IND when initiating. */
 
   /*** Commit operation ***/
 

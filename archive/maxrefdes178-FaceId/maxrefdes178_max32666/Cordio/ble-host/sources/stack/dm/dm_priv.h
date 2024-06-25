@@ -145,7 +145,7 @@ typedef struct
   Function declarations
 **************************************************************************************************/
 
-/* Privacy component inteface */
+/* Privacy component interface */
 void dmPrivMsgHandler(wsfMsgHdr_t *pMsg);
 void dmPrivHciHandler(hciEvt_t *pEvent);
 void dmPrivReset(void);
@@ -159,7 +159,7 @@ void dmPrivActClearResList(dmPrivMsg_t *pMsg);
 void dmPrivActSetPrivacyMode(dmPrivMsg_t *pMsg);
 void dmPrivActGenAddr(dmPrivMsg_t *pMsg);
 
-/* Privacy ASE component inteface */
+/* Privacy ASE component interface */
 void dmPrivAesMsgHandler(wsfMsgHdr_t *pMsg);
 
 /* Privacy ASE action functions */

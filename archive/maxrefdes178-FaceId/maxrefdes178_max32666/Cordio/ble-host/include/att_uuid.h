@@ -202,7 +202,7 @@ extern "C" {
 #define ATT_UUID_WEIGHT_MEAS                0x2A9D    /*!< \brief Weight Measurement */
 #define ATT_UUID_WEIGHT_SCALE_FEATURE       0x2A9E    /*!< \brief Weight Scale Feature */
 #define ATT_UUID_USER_CONTROL_POINT         0x2A9F    /*!< \brief User Control Point */
-#define ATT_UUID_RPAO                       0x2AC9    /*!< \brief Resolvable Prviate Address Only */
+#define ATT_UUID_RPAO                       0x2AC9    /*!< \brief Resolvable Private Address Only */
 #define ATT_UUID_MESH_PRV_DATA_IN           0x2ADB    /*!< \brief Mesh Provisioning Data In */
 #define ATT_UUID_MESH_PRV_DATA_OUT          0x2ADC    /*!< \brief Mesh Provisioning Data Out */
 #define ATT_UUID_MESH_PROXY_DATA_IN         0x2ADD    /*!< \brief Mesh Proxy Data In */

@@ -129,7 +129,7 @@ extern "C" {
 /**@}*/
 
 /** \name DM Unknown IDs
- * Values for unknown or unspecificed device identifiers.
+ * Values for unknown or unspecified device identifiers.
  */
 /**@{*/
 /*! \brief Unknown connection ID or other error */
@@ -249,9 +249,9 @@ extern "C" {
 #define DM_GAP_SCAN_FAST_INT_MIN          48      /*!< \brief Minimum scan interval when user initiated */
 #define DM_GAP_SCAN_FAST_INT_MAX          96      /*!< \brief Maximum scan interval when user initiated */
 #define DM_GAP_SCAN_FAST_WINDOW           48      /*!< \brief Scan window when user initiated */
-#define DM_GAP_SCAN_SLOW_INT_1            2048    /*!< \brief Scan interval 1 when background scannning */
+#define DM_GAP_SCAN_SLOW_INT_1            2048    /*!< \brief Scan interval 1 when background scanning */
 #define DM_GAP_SCAN_SLOW_WINDOW_1         18      /*!< \brief Scan window 1 when background scanning */
-#define DM_GAP_SCAN_SLOW_INT_2            4096    /*!< \brief Scan interval 2 when background scannning */
+#define DM_GAP_SCAN_SLOW_INT_2            4096    /*!< \brief Scan interval 2 when background scanning */
 #define DM_GAP_SCAN_SLOW_WINDOW_2         36      /*!< \brief Scan window 2 when background scanning */
 #define DM_GAP_ADV_FAST_INT_MIN_1         48      /*!< \brief Minimum advertising interval 1 when user initiated */
 #define DM_GAP_ADV_FAST_INT_MAX_1         96      /*!< \brief Maximum advertising interval 1 when user initiated */
@@ -269,9 +269,9 @@ extern "C" {
 #define DM_GAP_SCAN_CODED_FAST_INT_MIN    144     /*!< \brief Minimum scan interval when user initiated on LE Coded PHY */
 #define DM_GAP_SCAN_CODED_FAST_INT_MAX    288     /*!< \brief Maximum scan interval when user initiated on LE Coded PHY */
 #define DM_GAP_SCAN_CODED_FAST_WINDOW     144     /*!< \brief Scan window when user initiated on LE Coded PHY */
-#define DM_GAP_SCAN_CODED_SLOW_INT_1      6144    /*!< \brief Scan interval 1 when background scannning on LE Coded PHY  */
+#define DM_GAP_SCAN_CODED_SLOW_INT_1      6144    /*!< \brief Scan interval 1 when background scanning on LE Coded PHY  */
 #define DM_GAP_SCAN_CODED_SLOW_WINDOW_1   54      /*!< \brief Scan window 1 when background scanning on LE Coded PHY */
-#define DM_GAP_SCAN_CODED_SLOW_INT_2      12288   /*!< \brief Scan interval 2 when background scannning on LE Coded PHY */
+#define DM_GAP_SCAN_CODED_SLOW_INT_2      12288   /*!< \brief Scan interval 2 when background scanning on LE Coded PHY */
 #define DM_GAP_SCAN_CODED_SLOW_WINDOW_2   108     /*!< \brief Scan window 2 when background scanning on LE Coded PHY */
 #define DM_GAP_ADV_CODED_FAST_INT_MIN_1   144     /*!< \brief Minimum advertising interval 1 when user initiated on LE Coded PHY */
 #define DM_GAP_ADV_CODED_FAST_INT_MAX_1   288     /*!< \brief Maximum advertising interval 1 when user initiated on LE Coded PHY */
@@ -498,7 +498,7 @@ enum
   DM_SEC_ENCRYPT_FAIL_IND,                /*!< \brief Encryption failed */
   DM_SEC_AUTH_REQ_IND,                    /*!< \brief PIN or OOB data requested for pairing */
   DM_SEC_KEY_IND,                         /*!< \brief Security key indication */
-  DM_SEC_LTK_REQ_IND,                     /*!< \brief LTK requested for encyption */
+  DM_SEC_LTK_REQ_IND,                     /*!< \brief LTK requested for encryption */
   DM_SEC_PAIR_IND,                        /*!< \brief Incoming pairing request from master */
   DM_SEC_SLAVE_REQ_IND,                   /*!< \brief Incoming security request from slave */
   DM_SEC_CALC_OOB_IND,                    /*!< \brief Result of OOB Confirm Calculation Generation */
@@ -1650,7 +1650,7 @@ void DmScanSetAddrType(uint8_t addrType);
  *                        successful receive.
  *  \param  syncTimeout   Synchronization timeout.
  *
- *  \return Sync indentifier.
+ *  \return Sync identifier.
  */
 /*************************************************************************************************/
 dmSyncId_t DmSyncStart(uint8_t advSid, uint8_t advAddrType, const uint8_t *pAdvAddr, uint16_t skip,
@@ -1885,7 +1885,7 @@ void DmPastSetInfoTrsf(dmConnId_t connId, uint16_t serviceData, uint8_t advHandl
 /*************************************************************************************************/
 /*!
  *  \brief  Specify how the Controller should process periodic advertising synchronization
- *          information received from the device identified by the connnection handle.
+ *          information received from the device identified by the connection handle.
  *
  *  \param  connId           Connection identifier.
  *  \param  mode             Action to be taken when periodic advertising info is received.
@@ -3113,7 +3113,7 @@ void DmSecCompareRsp(dmConnId_t connId, bool_t valid);
 /*!
  *  \brief  This function returns the 6-digit compare value for the specified 128-bit confirm value.
  *
- *  \param  pConfirm    Pointer to 128-bit comfirm value.
+ *  \param  pConfirm    Pointer to 128-bit confirm value.
  *
  *  \return Six-digit compare value.
  */

@@ -573,7 +573,7 @@ void meshPrvClActProtocolError(void *pCcb, void *pMsg)
 
 /*************************************************************************************************/
 /*!
- *  \brief     End provisioning when timeout has occured.
+ *  \brief     End provisioning when timeout has occurred.
  *
  *  \param[in] pCcb  Control block.
  *  \param[in] pMsg  State machine message.

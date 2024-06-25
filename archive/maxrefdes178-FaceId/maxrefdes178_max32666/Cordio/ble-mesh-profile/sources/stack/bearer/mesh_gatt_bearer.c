@@ -606,7 +606,7 @@ static void gattBrEmptyPduRecvCback(meshGattProxyConnId_t connId, meshGattProxyP
 static void gattBrEmptyPduSendCback(meshGattProxyPduSendEvt_t *pEvt)
 {
   (void)pEvt;
-  MESH_TRACE_ERR0("MESH GATT BR: PDU send cback not registerd ");
+  MESH_TRACE_ERR0("MESH GATT BR: PDU send cback not registered ");
 }
 
 /**************************************************************************************************

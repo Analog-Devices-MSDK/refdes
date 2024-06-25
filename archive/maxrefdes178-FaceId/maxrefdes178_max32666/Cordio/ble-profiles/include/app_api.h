@@ -312,7 +312,7 @@ void AppMasterInit(void);
 /**@}*/
 
 /** \name App Advertising Functions
- * Configure and send legacy, extended and periodic advertisments.
+ * Configure and send legacy, extended and periodic advertisements.
  */
 /**@{*/
 
@@ -1006,7 +1006,7 @@ void AppDiscComplete(dmConnId_t connId, uint8_t status);
  *  \param  uuidLen   Length of service UUID (2 or 16).
  *  \param  pUuid     Pointer to service UUID.
  *  \param  listLen   Length of characteristic and handle lists.
- *  \param  pCharList Characterisic list for discovery.
+ *  \param  pCharList Characteristic list for discovery.
  *  \param  pHdlList  Characteristic handle list.
  *
  *  \return None.

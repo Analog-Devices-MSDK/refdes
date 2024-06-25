@@ -116,7 +116,7 @@ ifeq ($(MAKECMDGOALS),sla)
 SRCS += sla_header.c
 endif
 
-# External libray source files
+# External library source files
 SRCS += bmi160.c
 
 # Where to find source files for this test
@@ -202,7 +202,7 @@ include $(SDHC_DRIVER_DIR)/sdhc.mk
 #CORDIO_DIR=Cordio
 #include $(CORDIO_DIR)/platform/targets/maxim/build/cordio.mk
 
-# Inlcude USB Library
+# Include USB Library
 #MAXUSB_DIR=$(LIBS_DIR)/MAXUSB
 #include $(MAXUSB_DIR)/maxusb.mk
 

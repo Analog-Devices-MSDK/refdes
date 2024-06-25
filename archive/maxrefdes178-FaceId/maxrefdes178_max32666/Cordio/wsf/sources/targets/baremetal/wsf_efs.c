@@ -223,7 +223,7 @@ wsfEfsHandle_t WsfEfsAddFile(uint32_t maxSize, uint8_t media, wsfEsfAttributes_t
         /* to become the file's address in the wsfEfsMediaTbl. */
         address += wsfEfsMediaTbl[media]->startAddress;
 
-        /* Increment the address to a page boundry */
+        /* Increment the address to a page boundary */
         if (wsfEfsMediaTbl[media]->pageSize)
         {
           address += address % wsfEfsMediaTbl[media]->pageSize;

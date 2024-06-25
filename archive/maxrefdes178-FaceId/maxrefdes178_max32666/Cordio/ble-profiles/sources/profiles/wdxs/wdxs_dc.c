@@ -160,7 +160,7 @@ uint8_t wdxsDcUpdateDiagnosticsComplete(dmConnId_t connId)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Process set connection paramter request.
+ *  \brief  Process set connection parameter request.
  *
  *  \return ATT status.
  */

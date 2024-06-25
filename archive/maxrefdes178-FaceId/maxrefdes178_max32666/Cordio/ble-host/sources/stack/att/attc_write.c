@@ -34,7 +34,7 @@
 /*!
  *  \brief  Allocate an ATT Prepare Write Request message buffer.
  *
- *  \param  bufLen      Lenght of buffer to be allocated.
+ *  \param  bufLen      Length of buffer to be allocated.
  *
  *  \return Pointer to data message buffer or NULL if allocation failed.
  */

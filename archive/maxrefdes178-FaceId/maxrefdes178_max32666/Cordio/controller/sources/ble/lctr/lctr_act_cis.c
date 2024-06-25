@@ -321,7 +321,7 @@ void lctrCisActCisEst(lctrCisCtx_t *pCisCtx)
 
   if ((txPwr == LL_PWR_CTRL_TXPOWER_UNMANAGED) && (pConnCtx->peerReqRecvd))
   {
-    LL_TRACE_INFO0("    txPower previously unmanaged. Initalized txPower.");
+    LL_TRACE_INFO0("    txPower previously unmanaged. Initialized txPower.");
 
     LCTR_SET_TXPOWER(pConnCtx, txPhy, pLctrRtCfg->defTxPwrLvl);
 

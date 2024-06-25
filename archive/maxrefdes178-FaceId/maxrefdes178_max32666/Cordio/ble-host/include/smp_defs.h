@@ -50,7 +50,7 @@ extern "C" {
 /**@}*/
 
 #define SMP_OOB_LEN                   16        /*!< \brief OOB Data length in bytes. */
-#define SMP_PIN_LEN                   3         /*!< \brief Passkey Pin lenght in bytes. */
+#define SMP_PIN_LEN                   3         /*!< \brief Passkey Pin length in bytes. */
 
 /** \name SMP Error Codes
  * SMP PDU status codes

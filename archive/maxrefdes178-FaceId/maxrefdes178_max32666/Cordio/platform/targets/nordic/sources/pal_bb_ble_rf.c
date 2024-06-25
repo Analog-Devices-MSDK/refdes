@@ -254,7 +254,7 @@ int8_t PalRadioIncreasePower(int8_t reqPwr, int8_t delta)
     else                    {  reqPwr = -20;  }
 #endif
   }
-  /* A decrease in power. The controller will decrease to higher step if reqPwer is inbetween two steps. */
+  /* A decrease in power. The controller will decrease to higher step if reqPwer is between two steps. */
   else if (delta < 0)
   {
 #if defined(NRF52840_XXAA)

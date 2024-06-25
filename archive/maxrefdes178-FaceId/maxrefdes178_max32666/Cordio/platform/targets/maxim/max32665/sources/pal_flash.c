@@ -4,7 +4,7 @@
  *
  * \brief      Flash driver implementation.
  *
- * Uses pages of internal flash for the databse.
+ * Uses pages of internal flash for the database.
  *
  * Copyright (c) 2019-2020 Packetcraft, Inc.  All rights reserved.
  * Packetcraft, Inc. confidential and proprietary.

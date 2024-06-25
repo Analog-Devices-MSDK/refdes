@@ -135,7 +135,7 @@ extern "C" {
 #define BSTREAM_TO_UINT32(n, p)   {BYTES_TO_UINT32(n, p); p += 4;}
 /*! \brief convert little endian byte stream to uint40_t, incrementing five bytes. */
 #define BSTREAM_TO_UINT40(n, p)   {BYTES_TO_UINT40(n, p); p += 5;}
-/*! \brief convert little endian byte stream to uint64_t, incrementing eigth bytes. */
+/*! \brief convert little endian byte stream to uint64_t, incrementing eight bytes. */
 #define BSTREAM_TO_UINT64(n, p)   {n = BstreamToUint64(p); p += 8;}
 /*! \brief convert little endian byte stream to six byte Bluetooth device address, incrementing six bytes. */
 #define BSTREAM_TO_BDA(bda, p)    {BdaCpy(bda, p); p += BDA_ADDR_LEN;}
@@ -175,7 +175,7 @@ extern "C" {
 #define UINT64_TO_BSTREAM(p, n)   {Uint64ToBstream(p, n); p += sizeof(uint64_t);}
 /*! \brief convert six byte Bluetooth device address to little endian byte stream, incrementing six bytes. */
 #define BDA_TO_BSTREAM(p, bda)    {BdaCpy(p, bda); p += BDA_ADDR_LEN;}
-/*! \brief convert eight byte Bluetooth device address to little endian byte stream, incrementing eigth bytes. */
+/*! \brief convert eight byte Bluetooth device address to little endian byte stream, incrementing eight bytes. */
 #define BDA64_TO_BSTREAM(p, bda)  {Bda64ToBstream(p, bda); p += BDA_ADDR_LEN;}
 /**@}*/
 

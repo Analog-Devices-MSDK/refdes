@@ -45,13 +45,13 @@ enum meshNwkFilterType
   MESH_NWK_BLACK_LIST = 1,   /*!< Filter type is black list */
 };
 
-/*! Mesh Newtork layer interface filter type. See ::meshNwkFilterType */
+/*! Mesh Network layer interface filter type. See ::meshNwkFilterType */
 typedef uint8_t meshNwkFilterType_t;
 
 /*! Mesh Network interface filter definition */
 typedef struct meshNwkIfFilter_tag
 {
-  meshNwkFilterType_t filterType;     /*!< Fiter type */
+  meshNwkFilterType_t filterType;     /*!< Filter type */
   uint16_t            filterSize;     /*!< Size of an interface filter */
   meshAddress_t       *pAddrList;     /*!< Pointer to list of addresses */
 } meshNwkIfFilter_t;

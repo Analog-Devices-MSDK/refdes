@@ -69,7 +69,7 @@
 struct
 {
   uint16_t          hdlList[DM_CONN_MAX][APP_DB_HDL_LIST_LEN];   /*! Cached handle list */
-  wsfHandlerId_t    handlerId;                      /*! WSF hander ID */
+  wsfHandlerId_t    handlerId;                      /*! WSF handler ID */
   bool_t            scanning;                       /*! TRUE if scanning */
   bool_t            autoConnect;                    /*! TRUE if auto-connecting */
   uint8_t           discState[DM_CONN_MAX];         /*! Service discovery state */
@@ -162,7 +162,7 @@ static const attCfg_t locatorAttCfg =
 {
   15,                               /* ATT server service discovery connection idle timeout in seconds */
   23,                               /* desired ATT MTU */
-  ATT_MAX_TRANS_TIMEOUT,            /* transcation timeout in seconds */
+  ATT_MAX_TRANS_TIMEOUT,            /* transaction timeout in seconds */
   4                                 /* number of queued prepare writes supported by server */
 };
 
@@ -234,7 +234,7 @@ static const attcDiscCfg_t locatorDiscCfgList[] =
   /* Write:  GATT service changed ccc descriptor */
   {locatorCccIndVal, sizeof(locatorCccIndVal), (GATT_SC_CCC_HDL_IDX + LOCATOR_DISC_GATT_START)},
 
-  /* Write: GATT clinet supported features */
+  /* Write: GATT client supported features */
   {locatorCsfVal, sizeof(locatorCsfVal), (GATT_CSF_HDL_IDX + LOCATOR_DISC_GATT_START)}
 };
 

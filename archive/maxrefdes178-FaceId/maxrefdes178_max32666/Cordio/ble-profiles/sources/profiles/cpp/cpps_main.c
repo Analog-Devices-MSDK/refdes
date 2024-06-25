@@ -42,7 +42,7 @@
 /*! \brief The maximum length of a field in a power measurement */
 #define CPPS_PM_MAX_FIELD_LEN 6
 
-/*! \brief Power Measurement Flag Indicies */
+/*! \brief Power Measurement Flag Indices */
 enum
 {
   CPPS_PPBP_FLAG_INDEX,         /* Pedal Power Balance Present */
@@ -249,7 +249,7 @@ void CppsSendPowerMeasurement(dmConnId_t connId)
   /* Get maximum length for a notification (ATT_MTU - 3) */
   maxValueLen = AttGetMtu(connId) - ATT_VALUE_NTF_LEN;
 
-  /* Add manditory parameters. skip flags field for now */
+  /* Add mandatory parameters. skip flags field for now */
   UINT16_TO_BSTREAM(pMsg, 0);
   UINT16_TO_BSTREAM(pMsg, cppsPmData.insantaneousPower);
 

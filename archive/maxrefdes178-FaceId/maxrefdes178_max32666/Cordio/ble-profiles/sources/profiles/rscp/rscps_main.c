@@ -39,7 +39,7 @@
 /*! \brief The maximum length of a power measurement */
 #define RSCPS_PM_MAX_LEN     10
 
-/*! \brief Running Speed Measurement Flag Indicies */
+/*! \brief Running Speed Measurement Flag Indices */
 enum
 {
   RSCPS_ISLP_FLAG_INDEX,          /*! \brief Instantaneous Stride Length Present Present */
@@ -162,7 +162,7 @@ void RscpsSendSpeedMeasurement(dmConnId_t connId)
   uint8_t msg[RSCPS_PM_MAX_LEN];
   uint8_t *p = msg;
 
-  /* Add manditory parameters */
+  /* Add mandatory parameters */
   UINT8_TO_BSTREAM(p, rscpSmData.flags);
   UINT16_TO_BSTREAM(p, rscpSmData.speed);
   UINT8_TO_BSTREAM(p, rscpSmData.cadence);

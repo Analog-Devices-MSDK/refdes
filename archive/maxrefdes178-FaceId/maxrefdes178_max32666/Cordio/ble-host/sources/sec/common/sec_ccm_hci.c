@@ -369,7 +369,7 @@ static void secCcmGenSi(secQueueBuf_t *pBuf, uint8_t *pPriorS)
   {
     if (pCcm->operation == SEC_CCM_OP_ENCRYPT)
     {
-      /* Encription complete.  Send notification. */
+      /* Encryption complete.  Send notification. */
       secCcmEncMsg_t *pMsg = (secCcmEncMsg_t *) &pBuf->msg;
 
       pMsg->pCiphertext = pCcm->pWorking;

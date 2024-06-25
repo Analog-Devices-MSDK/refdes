@@ -75,7 +75,7 @@ enum
 /* Task handler ID */
 static wsfHandlerId_t sensorHandlerId;
 
-/* App extention callback */
+/* App extension callback */
 static sensorExtCback_t sensorExtCback;
 
 /**************************************************************************************************

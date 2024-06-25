@@ -318,7 +318,7 @@ typedef struct bb154DrvCb_tag
 #define BB_154_DRV_MAX_EVENTS        BB_154_DRV_MAX_RADIO_EVENTS + BB_154_DRV_MAX_TIMER_EVENTS
 #define BB_154_DRV_NUM_EVT_HANDLERS  17
 
-/*! \brief    Event hander status. */
+/*! \brief    Event handler status. */
 enum bb154DrvEvHStat_tag
 {
   BB_154_DRV_EVH_STAT_OK = 0,
@@ -327,10 +327,10 @@ enum bb154DrvEvHStat_tag
   BB_154_DRV_EVH_STAT_ERR = 0x20
 };
 
-/*! \brief    Event hander type. */
+/*! \brief    Event handler type. */
 typedef uint8_t (*bb154DrvEvtHandler_t)(void);
 
-/*! \brief    Receive event hander index type. */
+/*! \brief    Receive event handler index type. */
 typedef uint8_t bb154DrvREHFnIdx_t;
 
 /*! \brief      Receive buffer descriptor.
@@ -2198,7 +2198,7 @@ void PalBb154SetOpParams(const PalBb154OpParam_t *pOpParam)
  *
  *  \return     Driver PIB pointer.
  *
- *  Calling this routine retun a pointer to the driver PIB.
+ *  Calling this routine returns a pointer to the driver PIB.
  */
 /*************************************************************************************************/
 PalBb154DrvPib_t *PalBb154GetDrvPIB(void)

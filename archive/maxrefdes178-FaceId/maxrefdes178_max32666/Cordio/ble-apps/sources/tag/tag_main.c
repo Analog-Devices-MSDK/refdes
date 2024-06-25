@@ -975,7 +975,7 @@ static void tagProcMsg(dmEvt_t *pMsg)
         /* Set the advertising peer address. */
         tagPrivAddDevToResListInd(tagCb.resListRestoreHdl);
 
-        /* Retore next device to resolving list in Controller. */
+        /* Restore next device to resolving list in Controller. */
         tagCb.resListRestoreHdl = AppAddNextDevToResList(tagCb.resListRestoreHdl);
 
         if (tagCb.resListRestoreHdl == APP_DB_HDL_NONE)

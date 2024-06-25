@@ -209,7 +209,7 @@ typedef struct
   uint32_t                startAddress;  /*!< \brief Start address. */
   uint32_t                endAddress;    /*!< \brief End address. */
   uint32_t                pageSize;      /*!< \brief Page size. */
-  wsfMediaInitFunc_t      *init;         /*!< \brief Media intialization callback. */
+  wsfMediaInitFunc_t      *init;         /*!< \brief Media initialization callback. */
   wsfMediaEraseFunc_t     *erase;        /*!< \brief Media erase callback. */
   wsfMediaReadFunc_t      *read;         /*!< \brief Media read callback. */
   wsfMediaWriteFunc_t     *write;        /*!< \brief Media write callback. */

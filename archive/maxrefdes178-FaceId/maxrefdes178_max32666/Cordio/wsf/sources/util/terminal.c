@@ -342,7 +342,7 @@ void TerminalRx(uint8_t dataByte)
       }
     }
 
-    /* If we still have room in the buf, put it in buf.  Othewise ignore it. */
+    /* If we still have room in the buf, put it in buf.  Otherwise ignore it. */
     else if (terminalCb.bufOffset < TERMINAL_MAX_COMMAND_LEN)
     {
       /* Ignore non-printable characters. */

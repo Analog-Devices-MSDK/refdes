@@ -470,7 +470,7 @@ uint32_t MeshGetRequiredMemory(void)
   reqMemSarTx = MeshSarTxGetRequiredMemory();
   /* Get Security module required memory. */
   reqMemSec = MeshSecGetRequiredMemory();
-  /* Get Acces layer required memory. */
+  /* Get Access layer required memory. */
   reqMemAcc = MeshAccGetRequiredMemory();
 
   if ((reqMemLocalCfg != MESH_MEM_REQ_INVALID_CFG) &&
@@ -1310,7 +1310,7 @@ void MeshProcessAdvPdu(meshAdvIfId_t advIfId, const uint8_t *pAdvPdu, uint8_t ad
       return;
     }
 
-    /* Allocate the Stack Message and aditional size for message parameters. */
+    /* Allocate the Stack Message and additional size for message parameters. */
     if ((pMsg = WsfMsgAlloc(sizeof(meshProcessAdvPdu_t) + advPduLen)) != NULL)
     {
       /* Set event type. */

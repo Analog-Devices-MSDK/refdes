@@ -62,7 +62,7 @@ enum
   GYRO_HANDLE_TEMPDATA_CLIENT_CHR_CONFIG, /*!< \brief Temporary data characteristic CCCD. */
   GYRO_HANDLE_TEMPDATA_CHR_USR_DESCR,     /*!< \brief Temporary data characteristic user description. */
 
-  GYRO_HANDLE_CONFIG_CHR,                 /*!< \brief Configuration characteristic delcaration. */
+  GYRO_HANDLE_CONFIG_CHR,                 /*!< \brief Configuration characteristic declaration. */
   GYRO_HANDLE_CONFIG,                     /*!< \brief Configuration characteristic value. */
   GYRO_HANDLE_CONFIG_CHR_USR_DESCR,       /*!< \brief Configuration characteristic user description. */
 

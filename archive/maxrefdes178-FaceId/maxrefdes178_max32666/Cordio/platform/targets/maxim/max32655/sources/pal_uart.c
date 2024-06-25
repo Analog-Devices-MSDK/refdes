@@ -67,7 +67,7 @@ void palUartCallback(int ch, int error)
 {
   int i;
   for(i = 0; i < PAL_UARTS; i++) {
-    /* Find the corresponding rqeuest and call the callback */
+    /* Find the corresponding request and call the callback */
     if((ch == palUartCb[i].readCh) && (palUartCb[i].state != PAL_UART_STATE_UNINIT)) {
       palUartCb[i].readCh = -1;
 
@@ -240,7 +240,7 @@ PalUartState_t PalUartGetState(PalUartId_t id)
  *  \return     None.
  *
  *  Store \a len received bytes in \a pData. After \a len is transferred, call
- *  \a UartInitInfo_t::rdCback to signal read completion. Alway call this function to setup buffer
+ *  \a UartInitInfo_t::rdCback to signal read completion. Always call this function to setup buffer
  *  when boot up or after a reading is done
  */
 /*************************************************************************************************/

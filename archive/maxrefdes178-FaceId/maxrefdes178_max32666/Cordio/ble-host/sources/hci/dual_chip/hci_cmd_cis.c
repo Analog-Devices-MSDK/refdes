@@ -78,7 +78,7 @@ void HciLeSetCigParamsCmd(HciCisCigParams_t *pCigParam)
 /*!
  *  \brief      HCI LE create CIS command.
  *
- *  \param      numCis            Nunber of CISes.
+ *  \param      numCis            Number of CISes.
  *  \param      pCreateCisParam   Parameters for creating connected isochronous stream.
  *
  *  \return     None.
@@ -108,7 +108,7 @@ void HciLeCreateCisCmd(uint8_t numCis, HciCisCreateCisParams_t *pCreateCisParam)
 /*!
  *  \brief      HCI LE remove CIG command.
  *
- *  \param      cigId        Identifer of a CIG.
+ *  \param      cigId        Identifier of a CIG.
  *
  *  \return     None.
  */

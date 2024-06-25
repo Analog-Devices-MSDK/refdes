@@ -504,7 +504,7 @@ meshLocalCfgRetVal_t MeshLocalCfgAddAddressToSubscrList(meshElementId_t elementI
  *  \param[in]     elementId         Local element identifier.
  *  \param[in]     pModelId          Pointer to generic model identifier structure.
  *  \param[out]    pOutSubscAddress  Pointer to the memory where to store the subscription address.
- *  \param[in,out] pInOutStartIndex  Pointer to an indexing variable. Must be intialized with 0 on
+ *  \param[in,out] pInOutStartIndex  Pointer to an indexing variable. Must be initialized with 0 on
  *                                   to restart search.
  *
  *  \return        Success or error reason. \see meshLocalCfgRetVal_t
@@ -768,7 +768,7 @@ uint16_t MeshLocalCfgCountNetKeys(void);
  *  \brief         Gets next NetKey Index.
  *
  *  \param[out]    pOutNetKeyIndex  Pointer to variable where the next NetKey Index is stored.
- *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be intialized with 0 on
+ *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be initialized with 0 on
  *                                  to restart search.
  *
  *  \return        Success or error reason. \see meshLocalCfgRetVal_t
@@ -923,7 +923,7 @@ uint8_t MeshLocalCfgCountModelBoundAppKeys(meshElementId_t elementId,
  *  \param[in]     elementId        Local element identifier.
  *  \param[in]     pModelId         Pointer to generic model identifier structure.
  *  \param[out]    pOutAppKeyIndex  Pointer to variable where the next AppKey Index is stored.
- *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be intialized with 0 on
+ *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be initialized with 0 on
  *                                  to restart search.
  *
  *  \return        Success or error reason. \see meshLocalCfgRetVal_t
@@ -990,7 +990,7 @@ uint16_t MeshLocalCfgCountBoundAppKeys(uint16_t netKeyIndex);
  *
  *  \param[in]     netKeyIndex      Network Key index.
  *  \param[out]    pOutAppKeyIndex  Pointer to variable where the next AppKey Index is stored.
- *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be intialized with 0 on
+ *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be initialized with 0 on
  *                                  to restart search.
  *
  *  \return        Success or error reason. \see meshLocalCfgRetVal_t

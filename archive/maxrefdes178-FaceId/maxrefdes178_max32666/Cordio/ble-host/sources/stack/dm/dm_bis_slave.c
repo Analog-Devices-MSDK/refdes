@@ -134,7 +134,7 @@ typedef struct
   uint8_t                     secLevel;               /*!< \brief Security level. */
   bool_t                      encrypt;                /*!< \brief Unencrypted or Encrypted. */
   bool_t                      authen;                 /*!< \brief Unauthenticated or Authenticated. */
-  uint8_t                     bcastCode[HCI_BC_LEN];  /*!< \brief Braodcast code. */
+  uint8_t                     bcastCode[HCI_BC_LEN];  /*!< \brief Broadcast code. */
 
   /* BIS */
   uint8_t                     numBis;                 /*!< \brief Total number of BISes in the BIG. */

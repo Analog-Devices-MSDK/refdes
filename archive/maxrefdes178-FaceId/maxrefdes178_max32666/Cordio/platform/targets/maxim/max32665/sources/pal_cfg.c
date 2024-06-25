@@ -144,7 +144,7 @@ void palCfgLoadBdAddress(uint8_t *pDevAddr)
   }
 
 
-  /* MA-L assigend by IEEE to Maxim Integrated Products */
+  /* MA-L assigned by IEEE to Maxim Integrated Products */
   pDevAddr[5] = 0x00;
   pDevAddr[4] = 0x18;
   pDevAddr[3] = 0x80;

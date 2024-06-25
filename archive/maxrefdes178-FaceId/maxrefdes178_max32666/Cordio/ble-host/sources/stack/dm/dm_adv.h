@@ -215,7 +215,7 @@ extern dmAdvCb_t dmAdvCb;
   Function declarations
 **************************************************************************************************/
 
-/* legacy adv component inteface */
+/* legacy adv component interface */
 void dmAdvMsgHandler(wsfMsgHdr_t *pMsg);
 void dmAdvHciHandler(hciEvt_t *pEvent);
 void dmAdvReset(void);
@@ -230,7 +230,7 @@ void dmAdvActClearSets(dmAdvMsg_t *pMsg);
 void dmAdvActSetRandAddr(dmAdvMsg_t *pMsg);
 void dmAdvActTimeout(dmAdvMsg_t *pMsg);
 
-/* extended adv component inteface */
+/* extended adv component interface */
 void dmExtAdvMsgHandler(wsfMsgHdr_t *pMsg);
 void dmExtAdvHciHandler(hciEvt_t *pEvent);
 void dmExtAdvReset(void);
@@ -251,7 +251,7 @@ void dmPerAdvActSetData(dmAdvMsg_t *pMsg);
 void dmPerAdvActStart(dmAdvMsg_t *pMsg);
 void dmPerAdvActStop(dmAdvMsg_t *pMsg);
 
-/* periodic adv component inteface */
+/* periodic adv component interface */
 void dmPerAdvMsgHandler(wsfMsgHdr_t *pMsg);
 void dmPerAdvHciHandler(hciEvt_t *pEvent);
 void dmPerAdvReset(void);

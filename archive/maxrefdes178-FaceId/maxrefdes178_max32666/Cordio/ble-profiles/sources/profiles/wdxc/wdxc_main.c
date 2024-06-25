@@ -291,7 +291,7 @@ static void wdxcParseFtc(dmConnId_t connId, uint8_t *pValue, uint16_t len)
     BSTREAM_TO_UINT8(status, p)
   }
 
-  /* Call appliation callback */
+  /* Call application callback */
   if (wdxcCb.pFtdCallback)
   {
     (*wdxcCb.pFtcCallback)(connId, handle, op, status);

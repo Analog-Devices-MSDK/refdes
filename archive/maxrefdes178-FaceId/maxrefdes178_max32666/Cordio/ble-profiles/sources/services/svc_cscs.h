@@ -45,7 +45,7 @@ Constants
 
 #define CSCS_WRDS_FEATURE_BIT            (1<<0)  /*!< \brief Wheel Revolution Data Supported Feature Mask Bit */
 #define CSCS_CRDS_FEATURE_BIT            (1<<1)  /*!< \brief Crank Revolution Data Supported Feature Mask Bit */
-#define CSCS_MSLS_FEATURE_BIT            (1<<2)  /*!< \brief Multiple Sensor Locations Supporte Feature Mask Bit */
+#define CSCS_MSLS_FEATURE_BIT            (1<<2)  /*!< \brief Multiple Sensor Locations Supported Feature Mask Bit */
 
 /*! \brief TODO: Set to all supported features */
 #define CSCS_ALL_FEATURES                (0x3)   /*!< \brief All Supported Feature Mask */

@@ -156,7 +156,7 @@ static uint8_t meshAdvGetAdvInterfaceById(meshAdvIfId_t advIfId)
  *  \param[in] pBrPdu   Pointer to a buffer containing a Mesh Bearer PDU
  *  \param[in] pduLen   Size of the Mesh ADV Bearer PDU
  *
- *  \return    TRUE if packet is transmited, FALSE otherwise.
+ *  \return    TRUE if packet is transmitted, FALSE otherwise.
  */
 /*************************************************************************************************/
 static bool_t meshAdvTransmitPacket(meshAdvInterface_t *pAdvIf, meshAdvType_t advType,
@@ -418,7 +418,7 @@ static void advBrEmptyPduRecvCback(meshAdvIfId_t advIfId, meshAdvType_t advType,
 static void advBrEmptyPduSendCback(meshAdvPduSendEvt_t *pEvt)
 {
   (void)pEvt;
-  MESH_TRACE_ERR0("MESH ADV BEARER: PDU send cback not registerd ");
+  MESH_TRACE_ERR0("MESH ADV BEARER: PDU send cback not registered ");
 }
 
 /**************************************************************************************************

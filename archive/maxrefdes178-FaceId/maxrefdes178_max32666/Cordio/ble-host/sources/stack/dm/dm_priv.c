@@ -367,7 +367,7 @@ void dmPrivHciHandler(hciEvt_t *pEvent)
     case HCI_LE_SET_ADDR_RES_ENABLE_CMD_CMPL_CBACK_EVT:
       pEvent->hdr.event = DM_PRIV_SET_ADDR_RES_ENABLE_IND;
 
-      /* if LE set address resoultion enable command succeeded */
+      /* if LE set address resolution enable command succeeded */
       if (pEvent->hdr.status == HCI_SUCCESS)
       {
         /* update LL Privacy Enabled flag */

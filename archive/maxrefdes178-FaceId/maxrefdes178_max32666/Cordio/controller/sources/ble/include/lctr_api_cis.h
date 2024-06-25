@@ -61,7 +61,7 @@ enum
   LCTR_CIS_MSG_CIS_DISC,                                /*!< CIS disconnect event. */
   LCTR_CIS_MSG_CIS_CONN_FAIL,                           /*!< CIS connection fail to maintain event. */
   LCTR_CIS_MSG_CIS_CLOSED,                              /*!< CIS closed event. */
-  LCTR_CIS_MSG_CIS_TERM_MIC_FAILED,                     /*!< CIS terminated due to MIC failiure event. */
+  LCTR_CIS_MSG_CIS_TERM_MIC_FAILED,                     /*!< CIS terminated due to MIC failure event. */
   LCTR_CIS_MSG_TOTAL,                                   /*!< Total number of CIS slave events. */
   LCTR_CIS_MSG_INVALID= 0xFF,                           /*!< Invalid CIS message. */
 };

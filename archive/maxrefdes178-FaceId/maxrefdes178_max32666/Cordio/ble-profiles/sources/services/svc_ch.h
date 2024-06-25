@@ -397,7 +397,7 @@ extern "C" {
 #define CH_GLMC_FLAG_EXT                      0x80    /*!< \brief Extended flags present */
 /**@}*/
 
-/** \name Glucose Measurement Context Field Lenths
+/** \name Glucose Measurement Context Field Lengths
  *
  */
 /**@{*/
@@ -628,7 +628,7 @@ extern "C" {
 #define CH_PLXS_CONTINUOUS_LEN                16      /*!< \brief Pulse oximiter profile continuous length. */
 /**@}*/
 
-/** \name Pulse Oximeter Common Field Lenths
+/** \name Pulse Oximeter Common Field Lengths
  *
  */
 /**@{*/
@@ -640,14 +640,14 @@ extern "C" {
 #define CH_PLX_PULSE_AMP_INDX_LEN             2       /*!< \brief Pulse AMP index length. */
 /**@}*/
 
-/** \name Pulse Oximeter Spot Check Measurement Field Lenths
+/** \name Pulse Oximeter Spot Check Measurement Field Lengths
  *
  */
 /**@{*/
 #define CH_PLXSC_TIMESTAMP_LEN                7       /*!< \brief Pulse oximiter spot check measurement timestamp length. */
 /**@}*/
 
-/** \name Pulse Oximeter Continuous Measurement Field Lenths
+/** \name Pulse Oximeter Continuous Measurement Field Lengths
  *
  */
 /**@{*/
@@ -655,14 +655,14 @@ extern "C" {
 #define CH_PLXC_SPO2PR_SLOW_LEN               2       /*!< \brief Pulse oximiter continuous measurement SPO2PR slow length. */
 /**@}*/
 
-/** \name  Pulse Oximeter Features Field Lenths
+/** \name  Pulse Oximeter Features Field Lengths
  *
  */
 /**@{*/
 #define CH_PLXF_MIN_FEATURES_LEN              2       /*!< \brief Pulse oximiter minimum features length. */
 #define CH_PLXF_MAX_FEATURES_LEN              7       /*!< \brief Pulse oximiter maximum features length. */
 #define CH_PLXF_SENSOR_SUPPORT_LEN            2       /*!< \brief Pulse oximiter sensor support length. */
-#define CH_PLXF_MEASUREMENT_SUPPORT_LEN       2       /*!< \brief Pulse oximeter measurement suppported length. */
+#define CH_PLXF_MEASUREMENT_SUPPORT_LEN       2       /*!< \brief Pulse oximeter measurement supported length. */
 /**@}*/
 
 /** \name Pulse Oximeter Spot Check Measurement Flags

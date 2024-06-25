@@ -220,7 +220,7 @@ static void meshCfgMdlClRspTimeoutMsgHandlerCback(uint16_t tmrUid)
       /* Check if request is local. */
       if (!MESH_IS_ADDR_UNASSIGNED(pReqParams->cfgMdlSrAddr))
       {
-        /* Free entry in the remote server database since timeout occured. */
+        /* Free entry in the remote server database since timeout occurred. */
         meshCfgMdlClRemFromSrDbSafe(pReqParams->cfgMdlSrAddr);
       }
 
@@ -416,7 +416,7 @@ bool_t meshCfgMdlClHandleCompDataStatus(meshCfgMdlClOpReqParams_t *pReqParam, ui
   /* Unpack message. */
   meshCfgMsgUnpackCompData(pMsgParam, (msgParamLen - CFG_MDL_MSG_COMP_DATA_STATE_NUM_BYTES), &evt.data);
 
-  /* Validate for Page 0 that length accomodates at least one empty element and the page header.
+  /* Validate for Page 0 that length accommodates at least one empty element and the page header.
    */
   if((evt.data.pageNumber == 0) &&
      (evt.data.pageSize < CFG_MDL_MSG_COMP_DATA_PG0_EMPTY_NUM_BYTES +
@@ -1552,7 +1552,7 @@ bool_t meshCfgMdlClHandleHbPubStatus(meshCfgMdlClOpReqParams_t *pReqParam, uint8
 
 /*************************************************************************************************/
 /*!
- *  \brief     Handler for the Heartbeat Subcription Status response.
+ *  \brief     Handler for the Heartbeat Subscription Status response.
  *
  *  \param[in] pReqParams   Pointer to parameters of the request matching this response.
  *  \param[in] pMsgParam    Pointer to raw message parameters.

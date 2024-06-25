@@ -853,7 +853,7 @@ static void cfgMdlSrSubscrCmacCback(const uint8_t *pCmacResult, void *pParam)
     /* Set address type as virtual. */
     pEvt->subscrAddr |= (MESH_ADDR_TYPE_VIRTUAL_MSBITS_VALUE << MESH_ADDR_TYPE_SHIFT);
 
-    /* Set Local Config structure for accesing model information. */
+    /* Set Local Config structure for accessing model information. */
     mdlId.isSigModel = pEvt->isSig;
     if (pEvt->isSig)
     {

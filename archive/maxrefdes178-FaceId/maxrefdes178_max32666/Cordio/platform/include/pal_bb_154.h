@@ -484,7 +484,7 @@ void PalBb154SetOpParams(const PalBb154OpParam_t *pOpParam);
  *
  *  \return     Driver PIB pointer.
  *
- *  Calling this routine retun a pointer to the driver PIB.
+ *  Calling this routine returns a pointer to the driver PIB.
  */
 /*************************************************************************************************/
 PalBb154DrvPib_t *PalBb154GetDrvPIB(void);
@@ -640,7 +640,7 @@ void PalBb154ContinuousRx(uint8_t rfChan, uint8_t rxPhy);
 
 /*************************************************************************************************/
 /*!
- *  \brief  Stop Continous Transmit or Receive mode.
+ *  \brief  Stop Continuous Transmit or Receive mode.
  */
 /*************************************************************************************************/
 void PalBb154ContinuousStop(void);

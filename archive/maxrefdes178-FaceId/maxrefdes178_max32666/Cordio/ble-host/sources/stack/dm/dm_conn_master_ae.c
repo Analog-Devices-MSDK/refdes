@@ -73,7 +73,7 @@ static void dmExtConnOpen(uint8_t initPhys, uint8_t addrType, uint8_t *pAddr)
     {
       phyIdx = DmInitPhyToIdx(1 << i);
 
-      /* set extended create conection parameters for this PHY */
+      /* set extended create connection parameters for this PHY */
       scanParam[idx].scanInterval = dmConnCb.scanInterval[phyIdx];
       scanParam[idx].scanWindow = dmConnCb.scanWindow[phyIdx];
       connSpec[idx] = dmConnCb.connSpec[phyIdx];

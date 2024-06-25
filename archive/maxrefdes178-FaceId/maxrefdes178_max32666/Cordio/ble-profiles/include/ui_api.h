@@ -93,7 +93,7 @@ extern "C" {
 #define UI_MESSAGE_STOP                 3         /*!< Stop button type */
 
 /*! \brief Text format types */
-#define UI_FORMAT_SECONDS               0         /*!< Seconds foramt */
+#define UI_FORMAT_SECONDS               0         /*!< Seconds format */
 #define UI_FORMAT_MILLISECONDS          1         /*!< Milliseconds format */
 #define UI_FORMAT_MBS                   2         /*!< Mega bits per second format */
 #define UI_FORMAT_INTEGER               3         /*!< Integer format */

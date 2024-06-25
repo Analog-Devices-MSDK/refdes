@@ -323,7 +323,7 @@ static uint16_t meshLocalCfgGetTotalNumModels(void)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Computes total Subscription List size based on inital configuration.
+ *  \brief  Computes total Subscription List size based on initial configuration.
  *
  *  \return Total Subscription List size.
  */
@@ -363,7 +363,7 @@ static uint16_t meshLocalCfgGetTotalSubscrListSize(void)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Computes total AppKey Bind List size based on inital configuration.
+ *  \brief  Computes total AppKey Bind List size based on initial configuration.
  *
  *  \return Total AppKey Bind List size.
  */
@@ -436,7 +436,7 @@ static uint16_t meshLocalCfgSearchModel(meshElementId_t elementId, const meshMod
  *  \brief     Gets the address entry index in the address list.
  *
  *  \param[in] address     Address to be searched for.
- *  \param[in] pLabelUuid  Pointer to coresponding Label UUID if address is Virtual.
+ *  \param[in] pLabelUuid  Pointer to corresponding Label UUID if address is Virtual.
  *
  *  \return    Address entry index or MESH_INVALID_ENTRY_INDEX if address not found.
  */
@@ -493,7 +493,7 @@ static uint16_t meshLocalCfgGetAddressEntryIndex(meshAddress_t address, const ui
  *  \brief     Sets the address into one of the address lists.
  *
  *  \param[in] address        Address to be added.
- *  \param[in] pLabelUuid     Pointer to coresponding Label UUID if address is Virtual.
+ *  \param[in] pLabelUuid     Pointer to corresponding Label UUID if address is Virtual.
  *  \param[in] isPublishAddr  TRUE if the address is used for Publish.
  *                            FALSE if the address is used for Subscription.
  *
@@ -567,7 +567,7 @@ static uint16_t meshLocalCfgSetAddress(meshAddress_t address, const uint8_t *pLa
         {
           /* Set address for that location. */
           localCfgAddressList.pAddressList[i].address = address;
-          /* Increment reference count based on addres type. */
+          /* Increment reference count based on address type. */
           if (isPublishAddr == TRUE)
           {
             localCfgAddressList.pAddressList[i].referenceCountPublish++;
@@ -605,7 +605,7 @@ static uint16_t meshLocalCfgSetAddress(meshAddress_t address, const uint8_t *pLa
  *
  *  \param[in] addrEntryIdx   Address entry index in address list.
  *  \param[in] isVirtualAddr  TRUE if address is virtual.
- *                            FALSE if addres is non-virtual.
+ *                            FALSE if address is non-virtual.
  *  \param[in] isPublishAddr  TRUE if the address is used for Publish.
  *                            FALSE if the address is used for Subscription.
  *
@@ -968,7 +968,7 @@ static meshLocalCfgModelEntry_t* meshLocalCfgGetMdlCfg(meshElementId_t elementId
  *  \param[in] idx                Pointer to the index of localCfgModel.pModelArray[]
  *  \param[in] appKeyBindListIdx  Pointer to the app key bind list index
  *  \param[in] subscrListIdx      Pointer to the subscription list index
- *  \param[in] sharedSubscrList   TRUE if only models tht use a shared subscription list should be
+ *  \param[in] sharedSubscrList   TRUE if only models that use a shared subscription list should be
  *                                initialized. Else FALSE
  *
  *  \return    None
@@ -3945,7 +3945,7 @@ uint8_t MeshLocalCfgCountModelBoundAppKeys(meshElementId_t elementId,
  *  \param[in]     elementId        Local element identifier.
  *  \param[in]     pModelId         Pointer to generic model identifier structure.
  *  \param[out]    pOutAppKeyIndex  Pointer to variable where the next AppKey Index is stored.
- *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be intialized with 0 on
+ *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be initialized with 0 on
  *                                   to restart search.
  *
  *  \return        Success or error reason. \see meshLocalCfgRetVal_t
@@ -4180,7 +4180,7 @@ uint16_t MeshLocalCfgCountBoundAppKeys(uint16_t netKeyIndex)
  *
  *  \param[in]     netKeyIndex      Network Key index.
  *  \param[out]    pOutAppKeyIndex  Pointer to variable where the next AppKey Index is stored.
- *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be intialized with 0 on
+ *  \param[in,out] pInOutIndex      Pointer to an indexing variable. Must be initialized with 0 on
  *                                  to restart search.
  *
  *  \return        Success or error reason. \see meshLocalCfgRetVal_t

@@ -415,7 +415,7 @@ static void lctrMstBisRxDataPduHandler(lctrBigCtx_t *pBigCtx, uint32_t rxEvtCtr)
                 break;
               }
               default:
-                LL_TRACE_WARN2("Unexpected LLID recieved; dropping Rx ISO PDU, bigHandle=%u, pktCtr[15:0]=%u", pBigCtx->handle, pktCtr);
+                LL_TRACE_WARN2("Unexpected LLID received; dropping Rx ISO PDU, bigHandle=%u, pktCtr[15:0]=%u", pBigCtx->handle, pktCtr);
                 WsfMsgFree(pIsoSdu);
                 continue;
             }
@@ -742,7 +742,7 @@ RxPostProcess:
       }
       else if (hdr.cssn == pBigCtx->bcp.cssn)
       {
-        LL_TRACE_WARN1("Unexpected duplicate BIS Control PDU recieved, bigHandle=%u", pBigCtx->handle);
+        LL_TRACE_WARN1("Unexpected duplicate BIS Control PDU received, bigHandle=%u", pBigCtx->handle);
       }
       else
       {

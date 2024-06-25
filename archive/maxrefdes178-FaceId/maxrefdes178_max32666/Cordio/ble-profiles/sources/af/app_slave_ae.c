@@ -172,7 +172,7 @@ static void appSetPerAdvDataFrag(uint8_t advHandle)
   pAdvData = appExtSlaveCb.pPerAdvData[advHandle];
   remainLen = appExtSlaveCb.perAdvDataLen[advHandle] - appExtSlaveCb.perAdvDataOffset[advHandle];
 
-  /* if remaing data length > max adv data length supported by Controller */
+  /* if remaining data length > max adv data length supported by Controller */
   if (remainLen > appSlaveCb.maxAdvDataLen[advHandle])
   {
     remainLen = appSlaveCb.maxAdvDataLen[advHandle];
@@ -181,7 +181,7 @@ static void appSetPerAdvDataFrag(uint8_t advHandle)
   /* while there remains data to be sent */
   while (remainLen > 0)
   {
-    /* if remaing data length > max length of periodic advertising data (per set adv data command) */
+    /* if remaining data length > max length of periodic advertising data (per set adv data command) */
     if (remainLen > HCI_PER_ADV_DATA_LEN)
     {
       /* data needs to be fragmented */
@@ -312,7 +312,7 @@ void appPerAdvSetData(uint8_t advHandle, uint16_t len, uint8_t *pData, uint16_t 
 
 /*************************************************************************************************/
 /*!
- *  \brief  Set the value of an advertising data element in the peroidic advertising data.
+ *  \brief  Set the value of an advertising data element in the periodic advertising data.
  *          If the element already exists in the data then it is replaced with the new value.
  *          If the element does not exist in the data it is appended to it, space permitting.
  *
