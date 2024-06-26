@@ -59,12 +59,12 @@ bbSnifferGetPktFn_t bbSnifferGetPktTbl[BB_SNIFFER_OUTPUT_TOTAL_METHODS] =
 bbSnifferCtx_t bbSnifferCtx;
 
 /**************************************************************************************************
-  Packet retrival methods
+  Packet retrieval methods
 **************************************************************************************************/
 
 /*************************************************************************************************/
 /*!
- *  \brief      Retrive packet for processing.
+ *  \brief      Retrieve packet for processing.
  *
  *  \return     Pointer to packet to be packed.
  *

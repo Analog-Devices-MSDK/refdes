@@ -319,7 +319,7 @@ void dmConnCteHciHandler(hciEvt_t *pEvent)
 
           pEvent->hdr.event = DM_CONN_CTE_REQ_START_IND;
         }
-        /* else if disabing request */
+        /* else if disabling request */
         else if (pCteCb->reqState == DM_CONN_CTE_STATE_STOPPING)
         {
           if (pEvent->hdr.status == HCI_SUCCESS)

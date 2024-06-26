@@ -132,14 +132,14 @@ extern dmDevCb_t dmDevCb;
   Function declarations
 **************************************************************************************************/
 
-/* dev component inteface */
+/* dev component interface */
 void dmDevActReset(wsfMsgHdr_t *pMsg);
 
 /* dev action functions */
 void dmDevMsgHandler(wsfMsgHdr_t *pMsg);
 void dmDevHciHandler(hciEvt_t *pEvent);
 
-/* dev priv component inteface */
+/* dev priv component interface */
 void dmDevPrivHciHandler(hciEvt_t *pEvent);
 void dmDevPrivMsgHandler(wsfMsgHdr_t *pMsg);
 void dmDevPrivReset(void);

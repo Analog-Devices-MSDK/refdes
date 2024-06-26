@@ -150,7 +150,7 @@ typedef struct provisionerCb_tag
                                                                    *   FALSE otherwise */
   bool_t                  prvGattClStarted;                       /*!< TRUE if Provisioning Client is started
                                                                    *   FALSE otherwise */
-  wsfTimer_t              currNodeCCStartTimer;                   /*!< Timer to delay start of configruation. */
+  wsfTimer_t              currNodeCCStartTimer;                   /*!< Timer to delay start of configuration. */
   meshAddress_t           currNodePrimAddr;                       /*!< Current Node primary address. */
   meshAddress_t           currRoomAddress;                        /*!< Current Room address. */
   provisionerPrvDevType_t currNodeDeviceType;                     /*!< Current Node device type. See ::provisionerPrvDeviceTypes. */
@@ -300,7 +300,7 @@ static void provisionerCCSetAppKey(void)
     .netKeyIndex = provCb.currNodeNetKeyIdx,
   };
 
-  /* Static application key accross all nodes. */
+  /* Static application key across all nodes. */
   uint8_t appKey[] = { 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88,
                        0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88 };
 
@@ -453,7 +453,7 @@ static void provisionerCallUi(uint8_t status)
 {
   uint8_t revDevKey[MESH_KEY_SIZE_128];
 
-  /* Add type specific cleanup.  Remove if not used afterall. */
+  /* Add type specific cleanup.  Remove if not used after all. */
   switch(provCb.currNodeDeviceType)
   {
     case PROVISIONER_PRV_MASTER_SWITCH:

@@ -1038,7 +1038,7 @@ extern "C" {
 #define HCI_LE_SUP_FEAT_PATH_LOSS_MONITOR            0x0000000800000000  /*!< Path loss monitoring supported */
 /**@}*/
 
-/** \name LE feature bit positon in FeatureSet stored in the Controller
+/** \name LE feature bit position in FeatureSet stored in the Controller
 *
 */
 /**@{*/
@@ -1252,11 +1252,11 @@ extern "C" {
 #define HCI_ADV_RPT_PHY_PRIM_LE_CODED                0x03    /*!< Advertiser PHY is LE Coded */
 /**@}*/
 
-/** \name Extended advertising report event seconday PHY values
+/** \name Extended advertising report event secondary PHY values
  *
  */
 /**@{*/
-#define HCI_ADV_RPT_PHY_SEC_NONE                     0x00    /*!< No packets on seconday advertising channel */
+#define HCI_ADV_RPT_PHY_SEC_NONE                     0x00    /*!< No packets on secondary advertising channel */
 #define HCI_ADV_RPT_PHY_SEC_LE_1M                    0x01    /*!< Advertiser PHY is LE 1M */
 #define HCI_ADV_RPT_PHY_SEC_LE_2M                    0x02    /*!< Advertiser PHY is LE 2M */
 #define HCI_ADV_RPT_PHY_SEC_LE_CODED                 0x03    /*!< Advertiser PHY is LE Coded */

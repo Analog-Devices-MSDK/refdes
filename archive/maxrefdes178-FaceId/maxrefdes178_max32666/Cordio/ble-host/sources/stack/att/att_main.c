@@ -54,7 +54,7 @@ static uint8_t attBaseUuid[] = {0xFB, 0x34, 0x9B, 0x5F, 0x80, 0x00, 0x00, 0x80,
   Global Variables
 **************************************************************************************************/
 
-/* Default component function inteface */
+/* Default component function interface */
 const attFcnIf_t attFcnDefault =
 {
   attEmptyDataCback,
@@ -63,7 +63,7 @@ const attFcnIf_t attFcnDefault =
   attEmptyConnCback
 };
 
-/* Default component function inteface */
+/* Default component function interface */
 const eattFcnIf_t eattFcnDefault =
 {
   attEmptyL2cCocCback,

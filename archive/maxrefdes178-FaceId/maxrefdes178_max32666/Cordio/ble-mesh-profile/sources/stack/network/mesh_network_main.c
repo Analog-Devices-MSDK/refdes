@@ -1443,7 +1443,7 @@ static void meshBrToNwkPduRecvCback(meshBrInterfaceId_t brIfId, const uint8_t *p
   }
 
   /* Allocate memory for the PDU and meta information. The structure already contains one byte of
-   * the PDU, so substract 1 from length.
+   * the PDU, so subtract 1 from length.
    */
   pRecvPduMeta = WsfBufAlloc(sizeof(meshNwkPduMeta_t) + pduLen - 1);
 
@@ -1729,7 +1729,7 @@ meshNwkRetVal_t MeshNwkSendLtrPdu(const meshNwkPduTxInfo_t *pNwkPduTxInfo)
     return MESH_NWK_INVALID_PARAMS;
   }
 
-  /* Source adress validation. */
+  /* Source address validation. */
   if (!MESH_IS_ADDR_UNICAST(pNwkPduTxInfo->src))
   {
     return MESH_NWK_INVALID_PARAMS;

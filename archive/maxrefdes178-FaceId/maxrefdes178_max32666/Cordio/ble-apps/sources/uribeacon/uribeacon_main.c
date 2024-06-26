@@ -115,7 +115,7 @@ static wsfHandlerId_t uriBeaconHandlerId;
 static wsfTimer_t uriBeaconAdvTimer;
 static uint8_t    uriBeaconAdvType;
 
-/* App extention callback */
+/* App extension callback */
 static uribeaconExtCback_t uriBeaconExtCback;
 
 /**************************************************************************************************

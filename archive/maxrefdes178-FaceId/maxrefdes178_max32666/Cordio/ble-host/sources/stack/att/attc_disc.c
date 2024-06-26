@@ -89,7 +89,7 @@ static bool_t attcUuidCmp(attcDiscChar_t *pChar, uint8_t *pUuid, uint8_t setting
 
 /*************************************************************************************************/
 /*!
- *  \brief  Verify that required characterstics and descriptors have been discovered.
+ *  \brief  Verify that required characteristics and descriptors have been discovered.
  *
  *  \param  pCb         Pointer to service discovery control block.
  *
@@ -122,7 +122,7 @@ static uint8_t attcDiscVerify(attcDiscCb_t *pCb)
 /*************************************************************************************************/
 /*!
  *  \brief  Find next characteristic that requires descriptor discovery.  If none found,
- *          discovery is complete; verify that required characterstics have been discovered.
+ *          discovery is complete; verify that required characteristics have been discovered.
  *
  *  \param  connId      DM connection ID.
  *  \param  pCb         Pointer to service discovery control block.

@@ -414,7 +414,7 @@ static void meshSecDeobfCback(const uint8_t *pCipherTextBlock, void *pParam)
       /* Determine NetMic position in the PDU. */
       params.pCbcMac = (pReq->pEncObfNwkPdu + pReq->encObfNwkPduSize - params.cbcMacSize);
 
-      /* Determine CCM input length by substracting NetMic size and offset from total length. */
+      /* Determine CCM input length by subtracting NetMic size and offset from total length. */
       params.inputLen = pReq->encObfNwkPduSize - MESH_DST_ADDR_POS - params.cbcMacSize;
 
       /* Call Toolbox to decrypt CCM. */
@@ -503,7 +503,7 @@ static meshSecRetVal_t meshSecSetNextFriendMatAndDeobf(meshSecNwkDeobfDecReq_t *
       continue;
     }
 
-    /* Check if the Key Refresh Phase allows use of updated material. Key Refresh Read shoud
+    /* Check if the Key Refresh Phase allows use of updated material. Key Refresh Read should
      * never fail for keys that are in sync with security key information.
      */
     state = MeshLocalCfgGetKeyRefreshPhaseState(pNetKeyInfo->hdr.keyIndex);
@@ -612,7 +612,7 @@ static meshSecRetVal_t meshSecSetNextNetKeyMatAndDeobf(meshSecNwkDeobfDecReq_t *
       continue;
     }
 
-    /* Check if the Key Refresh Phase allows use of updated material. Key Refresh Read shoud
+    /* Check if the Key Refresh Phase allows use of updated material. Key Refresh Read should
      * never fail.
      */
     state = MeshLocalCfgGetKeyRefreshPhaseState(pNetKeyInfo->hdr.keyIndex);

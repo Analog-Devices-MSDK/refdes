@@ -103,7 +103,7 @@ typedef struct meshFriendReq_tag
   meshAddress_t prevAddr;         /*!< Previous friend primary element address */
   uint8_t       numElements;      /*!< Number of elements in the LPN */
   uint16_t      lpnCounter;       /*!< Number of Friend Request messages sent by LPN */
-  int8_t        rssi;             /*!< RSSI measured on the Friend Requet message */
+  int8_t        rssi;             /*!< RSSI measured on the Friend Request message */
 } meshFriendReq_t;
 
 /*! Data structure for ::MESH_FRIEND_MSG_POLL_RECV */

@@ -95,7 +95,7 @@ bool_t attsUuid16Cmp(uint8_t *pUuid16, uint8_t uuidLen, uint8_t *pUuid)
  *  \param  handle      Attribute handle.
  *  \param  pAttrGroup  Return value pointer to found attribute's group.
  *
- *  \return Pointer to attribute if found, othewise NULL.
+ *  \return Pointer to attribute if found, otherwise NULL.
  */
 /*************************************************************************************************/
 attsAttr_t *attsFindByHandle(uint16_t handle, attsGroup_t **pAttrGroup)

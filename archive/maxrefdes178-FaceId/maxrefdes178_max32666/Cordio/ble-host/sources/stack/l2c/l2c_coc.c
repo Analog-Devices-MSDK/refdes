@@ -2751,7 +2751,7 @@ bool_t L2cCocEnhancedConnectReq(dmConnId_t connId, l2cCocRegId_t regId, uint16_t
   {  
     if (pRegCb->inUse && connId != DM_CONN_ID_NONE)
     {
-      /* alocate message buffer */
+      /* allocate message buffer */
       if ((pMsg = WsfMsgAlloc(sizeof(l2cApiEnConnectReq_t))) != NULL)
       {
         /* unused channels should be zero */
@@ -2813,7 +2813,7 @@ bool_t L2cCocEnhancedReconfigReq(dmConnId_t connId, uint16_t mtu, uint16_t mps,
 
   WsfTaskLock();
 
-  /* alocate message buffer */
+  /* allocate message buffer */
   if ((numChan <= L2C_MAX_EN_CHAN) && pConnCb)
   {
     for (i = 0; i < numChan; i++)

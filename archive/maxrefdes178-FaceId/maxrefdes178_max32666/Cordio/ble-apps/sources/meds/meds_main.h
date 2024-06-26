@@ -65,7 +65,7 @@ typedef struct
 typedef struct
 {
   medsIf_t          *pIf;                           /*! Profile interface */
-  wsfHandlerId_t    handlerId;                      /*! WSF hander ID */
+  wsfHandlerId_t    handlerId;                      /*! WSF handler ID */
 } medsCb_t;
 
 /**************************************************************************************************

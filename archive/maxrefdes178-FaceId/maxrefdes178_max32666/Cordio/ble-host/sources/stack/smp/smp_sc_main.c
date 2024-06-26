@@ -224,7 +224,7 @@ void SmpScCalcF4(smpCcb_t *pCcb, smpMsg_t *pMsg, uint8_t *pU, uint8_t *pV, uint8
   {
     uint8_t *pCatBuf = pCmacText;
 
-    /* Concatinate pU, pV, z */
+    /* Concatenate pU, pV, z */
     pCatBuf = SmpScCat(pCatBuf, pU, SMP_PUB_KEY_LEN);
     pCatBuf = SmpScCat(pCatBuf, pV, SMP_PUB_KEY_LEN);
     *pCatBuf = z;
@@ -260,13 +260,13 @@ void SmpScInit()
 
 /*************************************************************************************************/
 /*!
- *  \brief  Concatinate a buffer and return a pointer to the next byte after concatination.
+ *  \brief  Concatenate a buffer and return a pointer to the next byte after concatenation.
  *
  *  \param  pDst   Pointer to destination.
  *  \param  pSrc   Pointer to source buffer.
  *  \param  len    Length of pSrc in bytes.
  *
- *  \return Pointer to next byte after concatination.
+ *  \return Pointer to next byte after concatenation.
  */
 /*************************************************************************************************/
 uint8_t *SmpScCat(uint8_t *pDst, const uint8_t *pSrc, uint8_t len)
@@ -277,12 +277,12 @@ uint8_t *SmpScCat(uint8_t *pDst, const uint8_t *pSrc, uint8_t len)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Concatinate a 128 bit buffer and return a pointer to the next byte after concatination.
+ *  \brief  Concatenate a 128 bit buffer and return a pointer to the next byte after concatenation.
  *
  *  \param  pDst   Pointer to destination.
  *  \param  pSrc   Pointer to source buffer.
  *
- *  \return Pointer to next byte after concatination.
+ *  \return Pointer to next byte after concatenation.
  */
 /*************************************************************************************************/
 uint8_t *SmpScCat128(uint8_t *pDst, uint8_t *pSrc)

@@ -58,7 +58,7 @@ Constants
 #define CPP_CHLAS_FEATURE_BIT           (1<<13) /*!< \brief Chain Length Adjustment Supported Feature Mask Bit */
 #define CPP_CHWAS_FEATURE_BIT           (1<<14) /*!< \brief Chain Weight Adjustment Supported Feature Mask Bit */
 #define CPP_SLAS_FEATURE_BIT            (1<<15) /*!< \brief Span Length Adjustment Supported Feature Mask Bit */
-#define CPP_SMC_FEATURE_BIT             (1<<16) /*!< \brief Sensor Measurement Contex (0: FORCE, 1: TORQUE) */
+#define CPP_SMC_FEATURE_BIT             (1<<16) /*!< \brief Sensor Measurement Context (0: FORCE, 1: TORQUE) */
 #define CPP_IMDS_FEATURE_BIT            (1<<17) /*!< \brief Instantaneous Measurement Direction Supported */
 #define CPP_FCDS_FEATURE_BIT            (1<<18) /*!< \brief Factory Calibration Date Supported Feature Mask Bit */
 #define CPP_EOCS_FEATURE_BIT            (1<<19) /*!< \brief Enhanced Offset Compensation Supported Feature Mask Bit */

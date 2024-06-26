@@ -92,7 +92,7 @@ typedef struct
 {
   uint16_t          hdlList[APP_DB_HDL_LIST_LEN];   /*! Cached handle list */
   medcIf_t          *pIf;                           /*! Profile interface */
-  wsfHandlerId_t    handlerId;                      /*! WSF hander ID */
+  wsfHandlerId_t    handlerId;                      /*! WSF handler ID */
   uint16_t          autoUuid[MEDC_MAX_AUTO_UUID];   /*! Service UUID for autoconnect */
   bool_t            scanning;                       /*! TRUE if scanning */
   bool_t            autoConnect;                    /*! TRUE if auto-connecting */

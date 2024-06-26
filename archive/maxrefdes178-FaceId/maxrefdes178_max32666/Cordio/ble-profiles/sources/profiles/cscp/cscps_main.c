@@ -39,7 +39,7 @@
 /*! \brief The maximum length of a power measurement */
 #define CSCPS_PM_MAX_LEN          11
 
-/*! \brief Cycle Speed and Cadence Measurement Flag Indicies */
+/*! \brief Cycle Speed and Cadence Measurement Flag Indices */
 enum
 {
   CSCPS_WRDP_FLAG_INDEX,          /*! \brief Wheel Revolution Data Present */
@@ -152,7 +152,7 @@ void CscpsSendSpeedMeasurement(dmConnId_t connId)
   uint8_t msg[CSCPS_PM_MAX_LEN];
   uint8_t *p = msg;
 
-  /* Add manditory parameters */
+  /* Add mandatory parameters */
   UINT8_TO_BSTREAM(p, cscpsSmData.flags);
 
   /* Add optional parameters */

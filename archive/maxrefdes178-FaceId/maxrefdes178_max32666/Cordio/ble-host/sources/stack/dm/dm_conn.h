@@ -60,10 +60,10 @@ enum
 
   /* messages from HCI */
   DM_CONN_MSG_HCI_LE_CONN_CMPL_FAIL,               /*!< HCI LE Connection Complete Failure Event */
-  DM_CONN_MSG_HCI_LE_CONN_CMPL,                    /*!< HCI LE Connection Compelte Event */
+  DM_CONN_MSG_HCI_LE_CONN_CMPL,                    /*!< HCI LE Connection Complete Event */
   DM_CONN_MSG_HCI_DISCONNECT_CMPL,                 /*!< HCI Disconnection Complete Event */
   DM_CONN_MSG_HCI_LE_CONN_UPDATE_CMPL,             /*!< HCI LE Connection Update Complete Event */
-  DM_CONN_MSG_HCI_LE_CREATE_CONN_CANCEL_CMD_CMPL,  /*!< HCI LE Create Connection Cancel Command Complet Event */
+  DM_CONN_MSG_HCI_LE_CREATE_CONN_CANCEL_CMD_CMPL,  /*!< HCI LE Create Connection Cancel Command Complete Event */
 };
 
 /* Number of messages */
@@ -110,7 +110,7 @@ enum
 {
   DM_CONN_SM_ACT_NONE = DM_CONN_ACT_SET_INIT(DM_CONN_ACT_SET_MAIN),    /*!< No Action */
   DM_CONN_SM_ACT_CLOSE,                                                /*!< Process Connection Close */
-  DM_CONN_SM_ACT_CONN_OPENED,                                          /*!< Procoess Connection Opened */
+  DM_CONN_SM_ACT_CONN_OPENED,                                          /*!< Process Connection Opened */
   DM_CONN_SM_ACT_CONN_FAILED,                                          /*!< Process Connection Failed */
   DM_CONN_SM_ACT_CONN_CLOSED,                                          /*!< Process Connection Closed */
   DM_CONN_SM_ACT_HCI_UPDATED,                                          /*!< Process HCI Connection Update */
@@ -342,16 +342,16 @@ dmConnId_t dmConnOpenAccept(uint8_t clientId, uint8_t initPhys, uint8_t advHandl
                             uint8_t role);
 void dmConnExecCback(dmConnMsg_t *pMsg);
 
-/* component inteface */
+/* component interface */
 void dmConnReset(void);
 void dmConnMsgHandler(wsfMsgHdr_t *pMsg);
 void dmConnHciHandler(hciEvt_t *pEvent);
 
-/* component 2 inteface */
+/* component 2 interface */
 void dmConn2MsgHandler(wsfMsgHdr_t *pMsg);
 void dmConn2HciHandler(hciEvt_t *pEvent);
 
-/* connection update inteface */
+/* connection update interface */
 void dmConnUpdMsgHandler(wsfMsgHdr_t *pMsg);
 
 /* state machine */

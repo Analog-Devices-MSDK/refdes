@@ -64,7 +64,7 @@ void WdxsAuthenticationCfg(bool_t reqLevel, uint8_t *pKey);
  *  \brief  Handle WSF events for WDXS.
  *
  *  \param  event  event
- *  \param  pMsg   message assiciated with event
+ *  \param  pMsg   message associated with event
  *
  *  \return None.
  */

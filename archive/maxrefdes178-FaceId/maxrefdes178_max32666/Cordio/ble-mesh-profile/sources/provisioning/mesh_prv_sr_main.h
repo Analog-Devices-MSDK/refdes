@@ -80,7 +80,7 @@ enum meshPrvSrSmStateValues
   PRV_SR_ST_SEND_COMPLETE,              /* (4)  Sending Provisioning Complete PDU */
   PRV_SR_ST_LINK_FAILED,                /* Error state on which the device waits for the link to close */
 
-  PRV_SR_ST_NO_STATE_CHANGE,            /* Fictious state value, never reached by the state machine.
+  PRV_SR_ST_NO_STATE_CHANGE,            /* Fictitious state value, never reached by the state machine.
                                            Used as "next state" in event handling tables to indicate
                                            that the event does not change the current state. */
 };

@@ -66,7 +66,7 @@ typedef struct meshLocalCfgModelSubscrListInfo_tag
   uint16_t                           subscrListSize;  /*!< Size of the Subscription List */
 } meshLocalCfgModelSubscrListInfo_t;
 
-/*! Structure to store Model Publication state informations */
+/*! Structure to store Model Publication state information */
 typedef struct meshLocalCfgModelPublication_tag
 {
   uint16_t                        publishAddressIndex;      /*!< Publish Address index in the
@@ -107,7 +107,7 @@ typedef struct meshLocalCfgModelEntry_tag
                                                             */
 } meshLocalCfgModelEntry_t;
 
-/*! Local structure to store Models informations */
+/*! Local structure to store Models information */
 typedef struct meshLocalCfgModelInfo_tag
 {
   meshLocalCfgModelEntry_t *pModelArray;    /*!< Pointer to array describing models */
@@ -121,7 +121,7 @@ typedef struct meshLocalCfgAttTmr_tag
   uint8_t    remainingSec;    /*!< Remaining seconds */
 } meshLocalCfgAttTmr_t;
 
-/*! Local structure to store Elements informations */
+/*! Local structure to store Elements information */
 typedef struct meshLocalCfgElementInfo_tag
 {
   const meshElement_t        *pElementArray;          /*!< Pointer to array describing elements
@@ -154,7 +154,7 @@ typedef struct meshLocalCfgAddressListEntry_tag
                                           */
 } meshLocalCfgAddressListEntry_t;
 
-/*! Local structure to store Non-virtual Address informations */
+/*! Local structure to store Non-virtual Address information */
 typedef struct meshLocalCfgAddressListInfo_tag
 {
   meshLocalCfgAddressListEntry_t *pAddressList;    /*!< Pointer to the start location of the
@@ -176,7 +176,7 @@ typedef struct meshLocalCfgVirtualAddrListEntry_tag
                                                      */
 } meshLocalCfgVirtualAddrListEntry_t;
 
-/*! Local structure to store Label UUID informations */
+/*! Local structure to store Label UUID information */
 typedef struct meshLocalCfgVirtualAddrListInfo_tag
 {
   meshLocalCfgVirtualAddrListEntry_t *pVirtualAddrList;    /*!< Pointer to the start location of the
@@ -185,7 +185,7 @@ typedef struct meshLocalCfgVirtualAddrListInfo_tag
   uint16_t                           virtualAddrListSize;  /*!< Size of the Virtual Address List */
 } meshLocalCfgVirtualAddrListInfo_t;
 
-/*! Local structure to store AppKey to Model ID bind informations */
+/*! Local structure to store AppKey to Model ID bind information */
 typedef struct meshLocalCfgAppKeyBindListInfo_tag
 {
   uint16_t *pAppKeyBindList;     /*!< Pointer to the start location of the AppKeyBind list
@@ -206,7 +206,7 @@ typedef struct meshLocalCfgAppKeyListEntry_tag
   bool_t   newKeyAvailable;               /*!< Flag to signal that a new key is available */
 } meshLocalCfgAppKeyListEntry_t;
 
-/*! Local structure to store AppKey List related informations */
+/*! Local structure to store AppKey List related information */
 typedef struct meshLocalCfgAppKeyListInfo_tag
 {
   meshLocalCfgAppKeyListEntry_t *pAppKeyList;    /*!< Pointer to the start location of the
@@ -234,7 +234,7 @@ typedef struct meshLocalCfgNetKeyListEntry_tag
 /*! Data type for Node Identity State List entries. See::meshNodeIdentityStates_t */
 typedef meshNodeIdentityStates_t meshLocalCfgNodeIdentityListEntry_t;
 
-/*! Local structure to store NetKey List related informations */
+/*! Local structure to store NetKey List related information */
 typedef struct meshLocalCfgNetKeyListInfo_tag
 {
   meshLocalCfgNetKeyListEntry_t        *pNetKeyList;       /*!< Pointer to the start location of

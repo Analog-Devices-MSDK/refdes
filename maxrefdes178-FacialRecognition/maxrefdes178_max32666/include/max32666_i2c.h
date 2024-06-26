@@ -125,7 +125,7 @@ int i2c_master_reg_read_buf(uint8_t addr, uint8_t reg, uint8_t *buf, uint8_t len
 
 /**
  * @brief  Initialize I2C peripheral
- * @retval     #E_NO_ERROR   Intialization successful.
+ * @retval     #E_NO_ERROR   Initialization successful.
  * @retval     "Error Code"  @ref MXC_Error_Codes "Error Code" if unsuccessful.
  */
 int i2c_master_init(void);

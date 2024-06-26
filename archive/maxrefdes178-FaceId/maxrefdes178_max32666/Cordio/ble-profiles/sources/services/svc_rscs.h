@@ -46,7 +46,7 @@ Constants
 #define RSCS_TDMS_FEATURE_BIT            (1<<1)  /*!< \brief Total Distance Measurement Supported Feature Mask Bit */
 #define RSCS_WRSS_FEATURE_BIT            (1<<2)  /*!< \brief Walking or Running Status Supported Feature Mask Bit */
 #define RSCS_CPS_FEATURE_BIT             (1<<3)  /*!< \brief Calibration Procedure Supported Feature Mask Bit */
-#define RSCS_MSLS_FEATURE_BIT            (1<<4)  /*!< \brief Multiple Sensor Locations Supporte Feature Mask Bit */
+#define RSCS_MSLS_FEATURE_BIT            (1<<4)  /*!< \brief Multiple Sensor Locations Supported Feature Mask Bit */
 
 /*! \brief TODO: Set to all supported features */
 #define RSCS_ALL_FEATURES                (0x7)   /*!< \brief All Supported Feature Mask */

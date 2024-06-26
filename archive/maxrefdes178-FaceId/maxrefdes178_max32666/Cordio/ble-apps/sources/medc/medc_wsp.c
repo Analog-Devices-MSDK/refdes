@@ -53,7 +53,7 @@ enum
 /* Start of cached weight scale service handles; begins after DIS */
 #define MEDC_DISC_WSS_START         (MEDC_DISC_DIS_START + DIS_HDL_LIST_LEN)
 
-/* Start of User Data Service handles; begins after weight scale serivce */
+/* Start of User Data Service handles; begins after weight scale service */
 #define MEDC_DISC_UDS_START         (MEDC_DISC_WSS_START + WSPC_WSS_HDL_LIST_LEN)
 
 /* Total cached handle list length */

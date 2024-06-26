@@ -139,7 +139,7 @@ static const attCfg_t datsAttCfg =
 {
   15,                               /* ATT server service discovery connection idle timeout in seconds */
   241,                              /* desired ATT MTU */
-  ATT_MAX_TRANS_TIMEOUT,            /* transcation timeout in seconds */
+  ATT_MAX_TRANS_TIMEOUT,            /* transaction timeout in seconds */
   4                                 /* number of queued prepare writes supported by server */
 };
 
@@ -490,7 +490,7 @@ static void datsPrivAddDevToResListInd(dmEvt_t *pMsg)
     /* Set the advertising peer address. */
     datsPrivAddDevToResList(datsCb.resListRestoreHdl);
 
-    /* Retore next device to resolving list in Controller. */
+    /* Restore next device to resolving list in Controller. */
     datsCb.resListRestoreHdl = AppAddNextDevToResList(datsCb.resListRestoreHdl);
 
     if (datsCb.resListRestoreHdl == APP_DB_HDL_NONE)

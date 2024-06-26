@@ -164,7 +164,7 @@ static void meshSecBeaconVerificationCback(const uint8_t *pCmacResult, void *pPa
 
 /*************************************************************************************************/
 /*!
- *  \brief     Finds matching Beacon Key and attemps authentication based on fields of the Secure
+ *  \brief     Finds matching Beacon Key and attempts authentication based on fields of the Secure
  *             Network Beacon.
  *
  *  \param[in] pCmacResult  Pointer to the 128-bit CMAC result.
@@ -199,7 +199,7 @@ static meshSecRetVal_t meshSecTryNextAuthParams(meshSecNwkBeaconAuthReq_t *pReq)
       continue;
     }
 
-    /* Check if the Key Refresh Phase allows use of updated material. Key Refresh Read shoud
+    /* Check if the Key Refresh Phase allows use of updated material. Key Refresh Read should
      * never fail for keys that are in sync with security key information.
      */
     state = MeshLocalCfgGetKeyRefreshPhaseState(pNetKeyInfo->hdr.keyIndex);

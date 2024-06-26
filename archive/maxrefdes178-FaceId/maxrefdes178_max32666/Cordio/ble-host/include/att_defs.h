@@ -183,7 +183,7 @@ extern "C" {
 #define ATT_READ_TYPE_RSP_LEN         2 /*!< \brief Read type response length. */
 #define ATT_READ_REQ_LEN              3 /*!< \brief Read request length. */
 #define ATT_READ_RSP_LEN              1 /*!< \brief Read response length. */
-#define ATT_READ_BLOB_REQ_LEN         5 /*!< \brief Read blob request legnth. */
+#define ATT_READ_BLOB_REQ_LEN         5 /*!< \brief Read blob request length. */
 #define ATT_READ_BLOB_RSP_LEN         1 /*!< \brief Read blob response length. */
 #define ATT_READ_MULT_REQ_LEN         1 /*!< \brief Read multiple request length. */
 #define ATT_READ_MULT_RSP_LEN         1 /*!< \brief Read multiple response length. */

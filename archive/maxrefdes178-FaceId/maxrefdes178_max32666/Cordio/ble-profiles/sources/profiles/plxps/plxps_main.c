@@ -73,10 +73,10 @@ static uint8_t plxpsBuildScm(uint8_t *pBuf, plxpScm_t *pScm)
   /* flags */
   UINT8_TO_BSTREAM(p, flags);
 
-  /* Manditory SpO2 */
+  /* Mandatory SpO2 */
   UINT16_TO_BSTREAM(p, pScm->spo2);
 
-  /* Manditory Pulse Rate */
+  /* Mandatory Pulse Rate */
   UINT16_TO_BSTREAM(p, pScm->pulseRate);
 
   /* Timestamp */
@@ -130,10 +130,10 @@ static uint8_t plxpsBuildCm(uint8_t *pBuf, plxpCm_t *pCm)
   /* flags */
   UINT8_TO_BSTREAM(p, flags);
 
-  /* Manditory SpO2 */
+  /* Mandatory SpO2 */
   UINT16_TO_BSTREAM(p, pCm->spo2);
 
-  /* Manditory Pulse Rate */
+  /* Mandatory Pulse Rate */
   UINT16_TO_BSTREAM(p, pCm->pulseRate);
 
   /* SpO2PR Fast */
@@ -609,7 +609,7 @@ uint8_t PlxpsWriteCback(dmConnId_t connId, uint16_t handle, uint8_t operation,
                         uint16_t offset, uint16_t len, uint8_t *pValue, attsAttr_t *pAttr)
 {
   uint8_t opcode;
-  uint8_t oprator;
+  uint8_t operator;
 
   /* sanity check on length */
   if (len < PLXPS_RACP_MIN_WRITE_LEN)
@@ -625,7 +625,7 @@ uint8_t PlxpsWriteCback(dmConnId_t connId, uint16_t handle, uint8_t operation,
 
   /* parse opcode and operator and adjust remaining parameter length */
   BSTREAM_TO_UINT8(opcode, pValue);
-  BSTREAM_TO_UINT8(oprator, pValue);
+  BSTREAM_TO_UINT8(operator, pValue);
   len -= 2;
 
   /* handle a procedure in progress */
@@ -647,10 +647,10 @@ uint8_t PlxpsWriteCback(dmConnId_t connId, uint16_t handle, uint8_t operation,
   }
 
   /* verify operator */
-  if ((opcode != CH_RACP_OPCODE_ABORT && oprator != CH_RACP_OPERATOR_ALL) ||
-      (opcode == CH_RACP_OPCODE_ABORT && oprator != CH_RACP_OPERATOR_NULL))
+  if ((opcode != CH_RACP_OPCODE_ABORT && operator != CH_RACP_OPERATOR_ALL) ||
+      (opcode == CH_RACP_OPCODE_ABORT && operator != CH_RACP_OPERATOR_NULL))
   {
-    if (oprator > CH_RACP_OPERATOR_LAST)
+    if (operator > CH_RACP_OPERATOR_LAST)
       plxpsRacpSendRsp(connId, opcode, CH_RACP_RSP_OPERATOR_NOT_SUP);
     else
       plxpsRacpSendRsp(connId, opcode, CH_RACP_RSP_INV_OPERATOR);
@@ -669,12 +669,12 @@ uint8_t PlxpsWriteCback(dmConnId_t connId, uint16_t handle, uint8_t operation,
   {
     /* report records */
     case CH_RACP_OPCODE_REPORT:
-      plxpsRacpReport(connId, oprator);
+      plxpsRacpReport(connId, operator);
       break;
 
     /* delete records */
     case CH_RACP_OPCODE_DELETE:
-      plxpsRacpDelete(connId, oprator);
+      plxpsRacpDelete(connId, operator);
       break;
 
     /* abort current operation */
@@ -684,7 +684,7 @@ uint8_t PlxpsWriteCback(dmConnId_t connId, uint16_t handle, uint8_t operation,
 
     /* report number of records */
     case CH_RACP_OPCODE_REPORT_NUM:
-      plxpsRacpReportNum(connId, oprator);
+      plxpsRacpReportNum(connId, operator);
       break;
 
     /* unsupported opcode */

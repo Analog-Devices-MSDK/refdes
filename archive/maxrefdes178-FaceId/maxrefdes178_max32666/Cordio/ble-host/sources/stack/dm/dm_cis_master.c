@@ -198,7 +198,7 @@ static uint8_t dmCisNumEnabled(uint8_t cigId, uint8_t numCis, HciCisCisParams_t 
 
 /*************************************************************************************************/
 /*!
- *  \brief      Return the number of CIS connetions that are created for the given CIG.
+ *  \brief      Return the number of CIS connections that are created for the given CIG.
  *
  *  \param      cigId      CIG identifier.
  *  \param      numCis     Number of CISes.

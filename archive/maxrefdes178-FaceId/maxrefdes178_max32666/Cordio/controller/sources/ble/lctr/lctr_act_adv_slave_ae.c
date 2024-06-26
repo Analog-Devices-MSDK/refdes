@@ -528,7 +528,7 @@ void lctrPeriodicAdvActStart(lctrAdvSet_t *pAdvSet)
 
   pAdvSet->perParam.perAdvEnabled = TRUE;
 
-  /* Need to set the flag to add aux BOD when extened adv is already started. */
+  /* Need to set the flag to add aux BOD when extended adv is already started. */
   if (pAdvSet->state == LCTR_EXT_ADV_STATE_ENABLED && pAdvSet->auxBodUsed == FALSE)
   {
     pAdvSet->perParam.perAuxStart = TRUE;

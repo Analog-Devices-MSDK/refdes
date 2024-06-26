@@ -4,7 +4,7 @@ target-version = ['py36']
 
 [tool.codespell]
 count = ''
-ignore-words-list = 'pres,cconfiguration'
+ignore-words-list = 'pres,cconfiguration,anormal,pEvent,ANS,alignIn,filType,filtype,GLight,apon,cLen'
 quiet-level = 3
-skip = '*.dasm,*.map,./.mypy_cache,./venv,./.git,./super-linter.log,./maxrefdes178-FaceId/maxrefdes178_max32666/Cordio'
+skip = '*.dasm,*.map,*.pdf,./.mypy_cache,./venv,./.git,./super-linter.log,./maxrefdes178-FaceId/maxrefdes178_max32666/Cordio,./pyproject.toml'
 ignore-regex = '^\s+"image/png".*$'

@@ -182,10 +182,10 @@ extern dmScanCb_t dmScanCb;
   Function declarations
 **************************************************************************************************/
 
-/* common scanning component inteface */
+/* common scanning component interface */
 void dmScanInit(void);
 
-/* legacy scanning component inteface */
+/* legacy scanning component interface */
 void dmScanReset(void);
 void dmScanMsgHandler(wsfMsgHdr_t *pMsg);
 void dmScanHciHandler(hciEvt_t *pEvent);
@@ -195,7 +195,7 @@ void dmScanActStart(dmScanMsg_t *pMsg);
 void dmScanActStop(dmScanMsg_t *pMsg);
 void dmScanActTimeout(dmScanMsg_t *pMsg);
 
-/* extended scanning component inteface */
+/* extended scanning component interface */
 void dmExtScanReset(void);
 void dmExtScanMsgHandler(wsfMsgHdr_t *pMsg);
 void dmExtScanHciHandler(hciEvt_t *pEvent);
@@ -216,7 +216,7 @@ void dmSyncSmActSyncLost(dmSyncCb_t *pScb, dmSyncMsg_t *pMsg);
 void dmSyncSmActSyncTrsfEst(dmSyncCb_t *pScb, dmSyncMsg_t *pMsg);
 void dmSyncSmActSyncTrsfEstFailed(dmSyncCb_t *pScb, dmSyncMsg_t *pMsg);
 
-/* sync component inteface */
+/* sync component interface */
 void dmSyncInit(void);
 void dmSyncReset(void);
 void dmSyncMsgHandler(wsfMsgHdr_t *pMsg);
@@ -229,7 +229,7 @@ void dmPastActSetInfoTrsf(dmPastMsg_t *pMsg);
 void dmPastActConfig(dmPastMsg_t *pMsg);
 void dmPastActDefaultConfig(dmPastMsg_t *pMsg);
 
-/* past component inteface */
+/* past component interface */
 void dmPastMsgHandler(wsfMsgHdr_t *pMsg);
 void dmPastHciHandler(hciEvt_t *pEvent);
 

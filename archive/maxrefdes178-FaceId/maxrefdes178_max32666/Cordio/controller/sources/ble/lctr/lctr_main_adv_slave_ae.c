@@ -1541,7 +1541,7 @@ uint16_t LctrInitAdvSetMem(uint8_t *pFreeMem, uint32_t freeMemSize)
 /*!
  *  \brief  Is set extended advertising enable parameter valid
  *
- *  \param  enable      True if enable extented adv, False otherwise.
+ *  \param  enable      True if enable extended adv, False otherwise.
  *  \param  pEnaParam   Set extended adv enable parameters.
  *
  *  \return Status error code.

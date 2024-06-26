@@ -73,7 +73,7 @@ enum
   SMPI_SC_ACT_PK_SETUP,             /*!< Process Passkey Setup */
   SMPI_SC_ACT_PK_KEYPRESS,          /*!< Process Passkey Keypress */
   SMPI_SC_ACT_PK_SEND_KEYPRESS,     /*!< Process Passkey Send Keypress */
-  SMPI_SC_ACT_PK_CALC_CA,           /*!< Process Passkey Calcuate Ca */
+  SMPI_SC_ACT_PK_CALC_CA,           /*!< Process Passkey Calculate Ca */
   SMPI_SC_ACT_PK_CALC_CB,           /*!< Process Passkey Calculate Cb */
   SMPI_SC_ACT_PK_SEND_CNF,          /*!< Process Passkey Send Confirm Value */
   SMPI_SC_ACT_PK_SEND_RAND,         /*!< Process Passkey Send Random Value */

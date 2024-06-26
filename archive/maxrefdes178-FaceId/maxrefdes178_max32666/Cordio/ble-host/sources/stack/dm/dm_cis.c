@@ -118,8 +118,8 @@ dmCisCigCb_t *dmCisCigCbAlloc(uint8_t cigId)
 /*!
  *  \brief  Allocate a DM CIS connection control block.
  *
- *  \param  cigId   Identfier of CIG that CIS belongs to.
- *  \param  cisId   CIS identfier.
+ *  \param  cigId   Identifier of CIG that CIS belongs to.
+ *  \param  cisId   CIS identifier.
  *  \param  role    Device role.
  *
  *  \return Pointer to CIS CCB or NULL if failure.
@@ -193,7 +193,7 @@ void dmCisCcbDealloc(dmCisCcb_t *pCcb)
 /*!
 *  \brief  Deallocate all CIS connection control blocks associated with the given CIG ID.
 *
-*  \param  cigId    CIG identifer.
+*  \param  cigId    CIG identifier.
 *
 *  \return None.
 */
@@ -243,8 +243,8 @@ dmCisCcb_t *dmCisCcbByHandle(uint16_t handle)
 /*!
  *  \brief  Return the CIS connection control block for the given CIG/CIS IDs.
  *
- *  \param  cigId   CIG identifer.
- *  \param  cisId   CIS identifer.
+ *  \param  cigId   CIG identifier.
+ *  \param  cisId   CIS identifier.
  *
  *  \return Pointer to CIS connection control block. NULL if not found.
  */
@@ -271,7 +271,7 @@ dmCisCcb_t *dmCisCcbById(uint8_t cigId, uint8_t cisId)
 /*!
 *  \brief  Return the CIG control block for the given CIG ID.
 *
-*  \param  cigId    CIG identifer.
+*  \param  cigId    CIG identifier.
 *
 *  \return Pointer to CIG control block. NULL if not found.
 */
@@ -575,7 +575,7 @@ void DmCisClose(uint16_t handle, uint8_t reason)
  *  \brief  For internal use only.  Find the Connected Isochronous Stream (CIS) ID with matching 
  *          handle.
  *
- *  \param  handle  CIS identifer.
+ *  \param  handle  CIS identifier.
  *
  *  \return CIS identifier or DM_CIS_ID_NONE if error.
  */

@@ -187,7 +187,7 @@ static meshNwkCacheRetVal_t meshNwkCacheAddToFifo(meshNwkCacheType_t cacheType,
   case MESH_NWK_CACHE_L2:
     index = meshNwkCacheCb.l2.tail;
 
-    /* Cache the Source Address, Destination Addres and Sequence Number for tracking. */
+    /* Cache the Source Address, Destination Address and Sequence Number for tracking. */
     cacheEntryL2.seqNo = ((uint32_t)pNwkPdu[2] << 16) |
                          ((uint32_t)pNwkPdu[3] << 8) |
                          ((uint32_t)pNwkPdu[4]);

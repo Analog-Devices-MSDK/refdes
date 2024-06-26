@@ -217,7 +217,7 @@ static const uint16_t hidLenPmVal = sizeof(hidPmVal);
 /* Attribute list for HID group */
 static const attsAttr_t hidList[] =
 {
-  /* Service Delcaration */
+  /* Service Declaration */
   {
     attPrimSvcUuid,
     (uint8_t *) hidValSvc,

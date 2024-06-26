@@ -507,7 +507,7 @@ void lctrTransferSyncActStart(void)
 
   LmgrIncResetRefCount();
 
-  /* All information is transfered, we can start scanning periodic sync immediately. */
+  /* All information is transferred, we can start scanning periodic sync immediately. */
   lctrPerTransferSync.connHandle = pMsg->connHandle;
   lctrPerTransferSync.serviceData = pMsg->id;
   lctrPerTransferSync.ceRef = pMsg->ceRef;

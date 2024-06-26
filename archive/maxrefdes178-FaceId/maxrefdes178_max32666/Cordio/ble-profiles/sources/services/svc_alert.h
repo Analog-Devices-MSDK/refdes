@@ -70,7 +70,7 @@ enum
   ALERT_PASS_AS_CCC_HDL,                  /*!< \brief Alert status client characteristic configuration */
   ALERT_PASS_RS_CH_HDL,                   /*!< \brief Ringer setting characteristic */
   ALERT_PASS_RS_HDL,                      /*!< \brief Ringer setting */
-  ALERT_PASS_RS_CCC_HDL,                  /*!< \brief Ringer settting client characteristic configuration */
+  ALERT_PASS_RS_CCC_HDL,                  /*!< \brief Ringer setting client characteristic configuration */
   ALERT_PASS_RCP_CH_HDL,                  /*!< \brief Ringer control point characteristic */
   ALERT_PASS_RCP_HDL,                     /*!< \brief Ringer control point */
 

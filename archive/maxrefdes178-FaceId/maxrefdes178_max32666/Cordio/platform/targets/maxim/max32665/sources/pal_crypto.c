@@ -121,7 +121,7 @@ typedef union {
     uint32_t key[BB_AES_BLOCK_SIZE / sizeof(uint32_t)];           /*!< Key. */
     uint32_t clear[BB_AES_BLOCK_SIZE / sizeof(uint32_t)];         /*!< Clear. */
     uint32_t cipher[BB_AES_BLOCK_SIZE / sizeof(uint32_t)];        /*!< Cipher. */
-  } w;                                                            /*!< Word acess block. */
+  } w;                                                            /*!< Word access block. */
 } palCryptoEcbData_t;
 
 struct {

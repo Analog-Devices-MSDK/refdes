@@ -133,7 +133,7 @@ void AppDbCheckValidRecord(appDbHdl_t hdl);
 
 *  \param  hdl       Database record handle.
 *
-*  \return TURE if record in use. FALSE, otherwise.
+*  \return TRUE if record in use. FALSE, otherwise.
 */
 /*************************************************************************************************/
 bool_t AppDbRecordInUse(appDbHdl_t hdl);
@@ -441,7 +441,7 @@ bool_t AppDbGetPeerAddrRes(appDbHdl_t hdl);
 *  \brief  Set address resolution attribute value for a peer device.
 *
 *  \param  hdl        Database record handle.
-*  \param  addrRes    Peer address resolution attribue value.
+*  \param  addrRes    Peer address resolution attribute value.
 *
 *  \return None.
 */

@@ -56,7 +56,7 @@ enum
   SMPR_ACT_SEND_PAIR_RSP,        /*!< Process Send Pairing Response */
   SMPR_ACT_PROC_PAIR_CNF,        /*!< Process Pair Confirm Value */
   SMPR_ACT_PROC_PAIR_CNF_CALC_1, /*!< Process Received Confirm Value */
-  SMPR_ACT_CNF_VERIFY,           /*!< Process Recevied Confirm Value Verification */
+  SMPR_ACT_CNF_VERIFY,           /*!< Process Received Confirm Value Verification */
   SMPR_ACT_SEND_PAIR_RANDOM,     /*!< Process Send Random Value */
   SMPR_ACT_SETUP_KEY_DIST,       /*!< Process Setup Key Distribution */
   SMPR_ACT_SEND_KEY,             /*!< Process Send Key */

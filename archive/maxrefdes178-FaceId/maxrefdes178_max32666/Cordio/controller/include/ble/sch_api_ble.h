@@ -39,7 +39,7 @@ extern "C" {
 /*! \brief      Preferred periodicity. */
 #define SCH_RM_PREF_PER_USEC        10000
 
-/*! \brief      Lowest perferred periodicity (for cases where intervalMax < SCH_RM_PREF_PER_USEC). */
+/*! \brief      Lowest preferred periodicity (for cases where intervalMax < SCH_RM_PREF_PER_USEC). */
 #define SCH_RM_PREF_PER_USEC_LOWEST 5000
 
 /*! \brief      Preferred periodicity for connections. */

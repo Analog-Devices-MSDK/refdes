@@ -40,7 +40,7 @@
 /* Decrement a timer. */
 #define SMP_DB_DEC_TIMER(a)         do { a = a > SMP_DB_SRV_MS ? a - SMP_DB_SRV_MS : 0;} while (0)
 
-/* Device database indicies. */
+/* Device database indices. */
 #define SMP_DB_COMMON_REC           0     /*! Common record used when database is full. */
 #define SMP_DB_FIRST_REC            1     /*! Index of first device specific record in database. */
 
@@ -290,7 +290,7 @@ uint32_t SmpDbMaxAttemptReached(dmConnId_t connId)
 
   if (pRec->attemptMult == 0)
   {
-    /* Due to a disconnection, a record exists but the attempt multipier hasn't been set. */
+    /* Due to a disconnection, a record exists but the attempt multiplier hasn't been set. */
     multiplier = 1;
   }
   else

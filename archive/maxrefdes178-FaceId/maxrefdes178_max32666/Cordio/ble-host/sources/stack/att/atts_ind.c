@@ -561,7 +561,7 @@ void AttsIndInit(void)
   uint8_t    i, j;
   attsCcb_t  *pCcb;
 
-  /* Number of slots times channels cannot excede 0xFF */
+  /* Number of slots times channels cannot exceed 0xFF */
   WSF_ASSERT(((ATT_BEARER_MAX) * DM_CONN_MAX) > sizeof(uint8_t))
 
   /* Initialize control block CCBs */

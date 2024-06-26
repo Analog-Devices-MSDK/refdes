@@ -84,7 +84,7 @@ typedef struct meshAccPduPubTxInfo_tag
 typedef struct meshAccToMdlMsgInfo_tag
 {
   const uint8_t   *pDstLabelUuid;  /*!< Pointer to label UUID for virtual destination address */
-  uint8_t         *pMsgParam;      /*!< Pointer to messsage parameters */
+  uint8_t         *pMsgParam;      /*!< Pointer to message parameters */
   uint16_t        msgParamLen;     /*!< Length of the message parameters */
   meshMsgOpcode_t opcode;          /*!< Message opcode */
   uint8_t         ttl;             /*!< Message TTL */

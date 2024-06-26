@@ -452,7 +452,7 @@ static int ble_command_execute_rx_command(void)
         expander_select_debugger((debugger_select_e)ble_command_buffer.total_payload_buffer[0]);
         break;
     default:
-        PR_ERROR("Unknwon command");
+        PR_ERROR("Unknown command");
         break;
     }
 

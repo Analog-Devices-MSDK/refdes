@@ -215,11 +215,11 @@ enum meshReturnValues
   MESH_NWK_OUT_OF_MEMORY             = MESH_NWK_RETVAL_BASE | MESH_OUT_OF_MEMORY,
 /*! The function parameter has invalid value */
   MESH_NWK_INVALID_PARAMS            = MESH_NWK_RETVAL_BASE | MESH_INVALID_PARAM,
-/*! An error not covered by other codes occured */
+/*! An error not covered by other codes occurred */
   MESH_NWK_UNKNOWN_ERROR             = MESH_NWK_RETVAL_BASE | MESH_UNKNOWN_ERROR,
 /*! Network is already initialized */
   MESH_NWK_ALREADY_INITIALIZED       = MESH_NWK_RETVAL_BASE | MESH_ALREADY_INITIALIZED,
-/*! Error occured during transport PDU send */
+/*! Error occurred during transport PDU send */
   MESH_NWK_TRANSPORT_ERROR           = MESH_NWK_RETVAL_BASE | (MESH_LAST_COMMON_RETVAL + 1),
 /*! Error occurred during network initialization */
   MESH_NWK_INIT_ERROR                = MESH_NWK_RETVAL_BASE | (MESH_LAST_COMMON_RETVAL + 2),
@@ -296,7 +296,7 @@ enum meshReturnValues
 
 /*! At least one of the parameters is invalid */
   MESH_SEQ_INVALID_PARAMS            = MESH_SEQ_RETVAL_BASE | MESH_INVALID_PARAM,
-/*! An error not covered by other codes occured */
+/*! An error not covered by other codes occurred */
   MESH_SEQ_UNKNOWN_ERROR             = MESH_SEQ_RETVAL_BASE | MESH_UNKNOWN_ERROR,
 /*! Sequence Manager is already initialized */
   MESH_SEQ_ALREADY_INITIALIZED       = MESH_SEQ_RETVAL_BASE | MESH_ALREADY_INITIALIZED,
@@ -328,7 +328,7 @@ enum meshReturnValues
   MESH_SEC_TOOL_OUT_OF_MEMORY        = MESH_SEC_TOOL_RETVAL_BASE | MESH_OUT_OF_MEMORY,
 /*! Invalid parameters in request */
   MESH_SEC_TOOL_INVALID_PARAMS       = MESH_SEC_TOOL_RETVAL_BASE | MESH_INVALID_PARAM,
-/*! An error occured but the reason is none of the above */
+/*! An error occurred but the reason is none of the above */
   MESH_SEC_TOOL_UNKNOWN_ERROR        = MESH_SEC_TOOL_RETVAL_BASE | MESH_UNKNOWN_ERROR,
 
 /* Mesh security return values */
@@ -350,7 +350,7 @@ enum meshReturnValues
 
 /*! At least one of the parameters is invalid */
   MESH_TMR_INVALID_PARAMS      = MESH_TMR_RETVAL_BASE | MESH_INVALID_PARAM,
-/*! An error not covered by other codes occured */
+/*! An error not covered by other codes occurred */
   MESH_TMR_UNKNOWN_ERROR       = MESH_TMR_RETVAL_BASE | MESH_UNKNOWN_ERROR,
 /*! Timer is already initialized */
   MESH_TMR_ALREADY_INITIALIZED = MESH_TMR_RETVAL_BASE | MESH_ALREADY_INITIALIZED,

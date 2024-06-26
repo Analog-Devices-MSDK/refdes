@@ -422,7 +422,7 @@ typedef union meshEvt_tag
   meshProxyServiceDataEvt_t   serviceData; /*!< Proxy service data. See ::meshProxyServiceDataEvt_t */
   meshProxyFilterStatusEvt_t  filterStatus;/*!< Proxy filter status event. See ::meshProxyFilterStatusEvt_t*/
   meshIvUpdtEvt_t             ivUpdt;      /*!< IV updated event */
-  meshHbInfoEvt_t             hbInfo;      /*!< Hearbeat information event. See::meshHbInfoEvt_t */
+  meshHbInfoEvt_t             hbInfo;      /*!< Heartbeat information event. See::meshHbInfoEvt_t */
 } meshEvt_t;
 
 /*! \brief Mesh Stack event notification callback */

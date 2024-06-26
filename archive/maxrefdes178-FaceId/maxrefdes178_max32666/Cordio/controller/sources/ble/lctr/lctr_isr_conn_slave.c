@@ -498,7 +498,7 @@ void lctrSlvConnEndOp(BbOpDesc_t *pOp)
         }
         else if ((pCtx->chanMapUpd.instant - pCtx->eventCounter) > 1)
         {
-          /*  Serve CE of (instant - 1) so that new channe map is applied in the end callback of CE(instant - 1). */
+          /*  Serve CE of (instant - 1) so that new channel map is applied in the end callback of CE(instant - 1). */
           numSkipCe = pCtx->chanMapUpd.instant - pCtx->eventCounter - 2;
         }
       }

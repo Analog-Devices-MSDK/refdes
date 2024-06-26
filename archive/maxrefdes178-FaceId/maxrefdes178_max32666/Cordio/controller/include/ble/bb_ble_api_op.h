@@ -328,7 +328,7 @@ typedef struct
 {
   uint32_t                rxSyncDelayUsec;    /*!< Receive timeout in microseconds. */
   BbBleExec_t             execCback;          /*!< Execute callback. */
-  BbBleRxDataComp_t       rxDataCback;        /*!< Recieve completion callback. */
+  BbBleRxDataComp_t       rxDataCback;        /*!< Receive completion callback. */
 
   /* Return parameters. */
   uint32_t                startTsUsec;        /*!< First Rx timestamp. */

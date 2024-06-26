@@ -68,7 +68,7 @@ bool_t MeshRpIsReplayAttack(meshAddress_t srcAddr, meshSeqNumber_t seqNo, uint32
 
 /*************************************************************************************************/
 /*!
- *  \brief     Updates the Replay Protection List for a given element with a specific sequnce number.
+ *  \brief     Updates the Replay Protection List for a given element with a specific sequence number.
  *
  *  \param[in] srcAddr  Address of originating element.
  *  \param[in] seqNo    Sequence number used to identify the PDU.

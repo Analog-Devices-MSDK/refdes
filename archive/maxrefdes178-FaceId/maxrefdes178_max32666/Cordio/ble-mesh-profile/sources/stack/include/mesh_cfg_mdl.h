@@ -82,10 +82,10 @@ enum meshCfgMdlClOpIds
   MESH_CFG_MDL_CL_FRIEND_SET,              /*!< Friend Set */
   MESH_CFG_MDL_CL_KEY_REF_PHASE_GET,       /*!< Key Refresh Phase Get */
   MESH_CFG_MDL_CL_KEY_REF_PHASE_SET,       /*!< Key Refresh Phase Set */
-  MESH_CFG_MDL_CL_HB_PUB_GET,              /*!< Hearbeat Publication Get */
-  MESH_CFG_MDL_CL_HB_PUB_SET,              /*!< Hearbeat Publication Set */
-  MESH_CFG_MDL_CL_HB_SUB_GET,              /*!< Hearbeat Subscription Get */
-  MESH_CFG_MDL_CL_HB_SUB_SET,              /*!< Hearbeat Subscription Set */
+  MESH_CFG_MDL_CL_HB_PUB_GET,              /*!< Heartbeat Publication Get */
+  MESH_CFG_MDL_CL_HB_PUB_SET,              /*!< Heartbeat Publication Set */
+  MESH_CFG_MDL_CL_HB_SUB_GET,              /*!< Heartbeat Subscription Get */
+  MESH_CFG_MDL_CL_HB_SUB_SET,              /*!< Heartbeat Subscription Set */
   MESH_CFG_MDL_CL_LPN_PT_GET,              /*!< Low Power Node PollTimeout Get */
   MESH_CFG_MDL_CL_NWK_TRANS_GET,           /*!< Network Transmit Get */
   MESH_CFG_MDL_CL_NWK_TRANS_SET,           /*!< Network Transmit Set */

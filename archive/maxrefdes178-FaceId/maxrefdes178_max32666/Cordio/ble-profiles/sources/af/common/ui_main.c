@@ -1005,7 +1005,7 @@ void UiProcessKeyboardInput(uint8_t ch)
 /*************************************************************************************************/
 void UiInit(const UiSplashScreen_t *pSplash, const UiMenu_t *pMain)
 {
-  /* Store main meny and start splash screen. */
+  /* Store main menu and start splash screen. */
   UiCb.pMainMenu = pMain;
   UiLoadSplash(pSplash);
 }

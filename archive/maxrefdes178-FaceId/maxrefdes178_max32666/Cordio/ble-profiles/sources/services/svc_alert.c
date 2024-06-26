@@ -115,7 +115,7 @@ static const uint16_t alertAnsLenCp = sizeof(alertAnsValCp);
 /* Alert status client characteristic configuration */
 /* Ringer setting characteristic */
 /* Ringer setting */
-/* Ringer settting client characteristic configuration */
+/* Ringer setting client characteristic configuration */
 /* Ringer control point characteristic */
 /* Ringer control point */
 

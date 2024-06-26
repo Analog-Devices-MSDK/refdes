@@ -129,7 +129,7 @@ static void secCmacGenSubkey1(secQueueBuf_t *pBuf)
  *  \param  pBuf    Buffer to left shift.
  *  \param  shift   Number of bits to shift.
  *
- *  \return The overflow of the operaiton.
+ *  \return The overflow of the operation.
  */
 /*************************************************************************************************/
 static uint8_t secCmacKeyShift(uint8_t *pBuf, uint8_t shift)
@@ -170,7 +170,7 @@ static void secCmacGenSubkey2(secQueueBuf_t *pBuf)
   secCmacSecCb_t *pCmac = (secCmacSecCb_t*) pBuf->pCb;
   uint8_t overflow;
 
-  /* Copy the result of the AES oepration */
+  /* Copy the result of the AES operation */
   Calc128Cpy(pCmac->subkey, pBuf->ciphertext);
 
   /* Calculate the K1 subkey */

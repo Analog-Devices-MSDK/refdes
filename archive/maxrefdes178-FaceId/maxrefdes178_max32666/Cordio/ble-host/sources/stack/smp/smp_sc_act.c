@@ -71,7 +71,7 @@ void SmpScEnableZeroDhKey(bool_t enable)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Write initator BD Address to a buffer for use with toolkit functions F5 and F6.
+ *  \brief  Write initiator BD Address to a buffer for use with toolkit functions F5 and F6.
  *
  *  \param  pCcb  Connection control block.
  *  \param  pBuf  Buffer to write BD addresses to.
@@ -613,7 +613,7 @@ void smpScActJwncCalcG2(smpCcb_t *pCcb, smpMsg_t *pMsg)
   {
     uint8_t *pCatBuf = pCmacText;
 
-    /* Concatinate PKax, PKbx, Nb */
+    /* Concatenate PKax, PKbx, Nb */
     if (pCcb->initiator)
     {
       pCatBuf = SmpScCat(pCatBuf, pCcb->pScCcb->pLocalPublicKey->pubKeyX, SMP_PUB_KEY_LEN);

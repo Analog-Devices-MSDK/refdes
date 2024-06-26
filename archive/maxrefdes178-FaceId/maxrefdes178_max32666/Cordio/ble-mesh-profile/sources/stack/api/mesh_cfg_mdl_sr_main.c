@@ -565,7 +565,7 @@ void meshCfgMdlSrHandleGattProxySet(uint8_t *pMsgParam, uint16_t msgParamLen, me
 
     if (notifyUpperLayers)
     {
-      /* Inform Hearbeat module that feature is changed. */
+      /* Inform Heartbeat module that feature is changed. */
       MeshHbFeatureStateChanged(MESH_FEAT_PROXY);
     }
 
@@ -1010,7 +1010,7 @@ void meshCfgMdlSrHandleFriendSet(uint8_t *pMsgParam, uint16_t msgParamLen, meshA
 
     if (notifyUpperLayers)
     {
-      /* Inform Hearbeat module that feature is changed. */
+      /* Inform Heartbeat module that feature is changed. */
       MeshHbFeatureStateChanged(MESH_FEAT_FRIEND);
     }
   }
@@ -1411,7 +1411,7 @@ void meshCfgMdlSrHandleHbSubSet(uint8_t *pMsgParam, uint16_t msgParamLen, meshAd
   /* Response contains the same packed states as set message. */
   meshCfgMdlSrSendRsp(MESH_CFG_MDL_SR_HB_SUB_STATUS, rspMsgParam, sizeof(rspMsgParam), src, ttl, netKeyIndex);
 
-  /* On success, notify Hearbeat module and invoke callback. */
+  /* On success, notify Heartbeat module and invoke callback. */
   if (rspMsgParam[0] == MESH_CFG_MDL_SR_SUCCESS)
   {
     /* Notify Subscription changed. */

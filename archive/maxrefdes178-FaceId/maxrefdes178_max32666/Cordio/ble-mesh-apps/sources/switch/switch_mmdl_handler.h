@@ -2,7 +2,7 @@
 /*!
  *  \file   switch_mmdl_handler.h
  *
- *  \brief  Mesh Model Handler for teh Switch App.
+ *  \brief  Mesh Model Handler for the Switch App.
  *
  *  Copyright (c) 2015-2018 Arm Ltd. All Rights Reserved.
  *

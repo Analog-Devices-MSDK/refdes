@@ -160,7 +160,7 @@ enum
   LCTR_PROC_CIS_EST_PEER,               /*!< Peer-initiated CIS establishment procedure. */
   LCTR_PROC_CIS_TERM,                   /*!< CIS termination procedure. */
   LCTR_PROC_CIS_TERM_PEER,              /*!< Peer-initiated CIS termination procedure. */
-  LCTR_PROC_PWR_IND,                    /*!< Power indication prodecure. */
+  LCTR_PROC_PWR_IND,                    /*!< Power indication procedure. */
   LCTR_PROC_PWR_CTRL,                   /*!< Power control procedure. */
 
   LCTR_PROC_INVALID = 0xFF              /*!< Invalid ID. */

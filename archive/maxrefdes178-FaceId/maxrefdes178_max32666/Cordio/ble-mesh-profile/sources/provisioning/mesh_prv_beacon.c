@@ -199,7 +199,7 @@ void MeshPrvBeaconStart(meshBrInterfaceId_t brIfId, uint32_t beaconInterval, con
   /* Stop timer */
   WsfTimerStop(&(prvBeaconCb.beaconTmr));
 
-  /* Set bearer inteface */
+  /* Set bearer interface */
   prvBeaconCb.brIfId = brIfId;
 
   /* Set beacon period */

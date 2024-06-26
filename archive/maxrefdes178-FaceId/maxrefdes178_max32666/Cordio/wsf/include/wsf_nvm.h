@@ -42,7 +42,7 @@ typedef void (*WsfNvmCompEvent_t)(bool_t status);
 /*!
  *  \brief  Read data.
  *
- *  \param  charId         charactor arrary for NVM ID.
+ *  \param  charId         character array for NVM ID.
  *
  *  \return if Read NVM successfully.
  */

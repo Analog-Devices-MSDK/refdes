@@ -146,7 +146,7 @@ static const attCfg_t periphAttCfg =
     15,                               /* ATT server service discovery connection idle timeout in seconds */
 //ty  241,                              /* desired ATT MTU */
     BLE_MAX_MTU_SIZE,                 /* desired ATT MTU */
-    ATT_MAX_TRANS_TIMEOUT,            /* transcation timeout in seconds */
+    ATT_MAX_TRANS_TIMEOUT,            /* transaction timeout in seconds */
     4                                 /* number of queued prepare writes supported by server */
 };
 
@@ -689,7 +689,7 @@ int ble_send_indication(uint16_t dataLen, uint8_t *data)
         }
     }
 
-    PR_ERROR("indication couldnt sent");
+    PR_ERROR("could not send indication");
 
     return E_COMM_ERR;
 }

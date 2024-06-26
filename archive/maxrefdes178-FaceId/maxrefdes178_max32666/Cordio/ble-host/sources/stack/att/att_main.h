@@ -163,7 +163,7 @@ typedef struct
   Global Variables
 **************************************************************************************************/
 
-/* Default component function inteface */
+/* Default component function interface */
 extern const attFcnIf_t attFcnDefault;
 
 /* Control block */

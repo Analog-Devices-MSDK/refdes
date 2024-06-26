@@ -117,7 +117,7 @@ static const uint16_t wdxsLenAuChCcc = sizeof(wdxsValAuChCcc);
 /* Attribute list for WDX group */
 static const attsAttr_t wdxsList[] =
 {
-  /* Service Delcaration */
+  /* Service Declaration */
   {
     attPrimSvcUuid,
     (uint8_t *) wdxsValSvc,

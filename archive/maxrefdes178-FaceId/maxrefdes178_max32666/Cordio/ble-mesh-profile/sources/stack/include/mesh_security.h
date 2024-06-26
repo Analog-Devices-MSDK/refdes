@@ -294,7 +294,7 @@ typedef struct meshSecNwkDeobfDecParams_tag
 /*!
  *  \brief     Mesh Security Network deobfuscation and decryption complete callback.
  *
- *  \param[in] isSuccess        TRUE if operation completed succesfully.
+ *  \param[in] isSuccess        TRUE if operation completed successfully.
  *  \param[in] isProxyConfig    TRUE if Network PDU is a Proxy Configuration Message.
  *  \param[in] pNwkPduNoMic     Pointer to buffer where the deobfuscated and decrypted network PDU
  *                              is stored.

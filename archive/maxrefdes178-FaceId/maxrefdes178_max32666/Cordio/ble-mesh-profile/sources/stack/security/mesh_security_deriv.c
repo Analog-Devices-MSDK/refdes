@@ -906,7 +906,7 @@ static meshSecRetVal_t meshSecHandleNetKeyDerivation(uint16_t netKeyIndex, bool_
   {
     /* Reset in progress flags. */
     /* Note:  pNetKeyInfo is NULL if (idx == secMatLocals.netKeyInfoListSize), but this is checked
-     * above and function will return with error status thus precluding a NULL derefence from
+     * above and function will return with error status thus precluding a NULL dereference from
      * occurring here.
      */
     /* coverity[var_deref_op] */

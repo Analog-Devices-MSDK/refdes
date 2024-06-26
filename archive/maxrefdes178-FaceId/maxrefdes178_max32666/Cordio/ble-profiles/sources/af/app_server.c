@@ -75,7 +75,7 @@ void AppServerConnCback(dmEvt_t *pDmEvt)
 
   if (pDmEvt->hdr.event == DM_CONN_OPEN_IND)
   {
-    /* apply the peer's CCC table - values are persistant across connection when bonded */
+    /* apply the peer's CCC table - values are persistent across connection when bonded */
     if ((dbHdl = AppDbGetHdl(connId)) != APP_DB_HDL_NONE)
     {
       uint8_t changeAwareState;

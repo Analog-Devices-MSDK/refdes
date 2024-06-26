@@ -87,7 +87,7 @@ enum
 struct
 {
   uint16_t          hdlList[DM_CONN_MAX][APP_DB_HDL_LIST_LEN];   /*! Cached handle list */
-  wsfHandlerId_t    handlerId;                      /*! WSF hander ID */
+  wsfHandlerId_t    handlerId;                      /*! WSF handler ID */
   bool_t            scanning;                       /*! TRUE if scanning */
   bool_t            autoConnect;                    /*! TRUE if auto-connecting */
   uint8_t           discState[DM_CONN_MAX];         /*! Service discovery state */
@@ -194,7 +194,7 @@ static const attCfg_t datcAttCfg =
 #else
   23,                               /* desired ATT MTU */
 #endif /* WDXC_INCLUDED */
-  ATT_MAX_TRANS_TIMEOUT,            /* transcation timeout in seconds */
+  ATT_MAX_TRANS_TIMEOUT,            /* transaction timeout in seconds */
   4                                 /* number of queued prepare writes supported by server */
 };
 
@@ -592,7 +592,7 @@ static void datcPrivAddDevToResListInd(dmEvt_t *pMsg)
   /* Check if in the process of restoring the Device List from NV */
   if (datcCb.restoringResList)
   {
-    /* Retore next device to resolving list in Controller. */
+    /* Restore next device to resolving list in Controller. */
     datcCb.resListRestoreHdl = AppAddNextDevToResList(datcCb.resListRestoreHdl);
 
     if (datcCb.resListRestoreHdl == APP_DB_HDL_NONE)

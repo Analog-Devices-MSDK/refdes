@@ -57,9 +57,9 @@ enum
   TEMP_HANDLE_DATA_CLIENT_CHR_CONFIG,  /*!< \brief Data characteristic CCCD. */
   TEMP_HANDLE_DATA_CHR_USR_DESCR,      /*!< \brief Data characteristic user description. */
 
-  TEMP_HANDLE_CONFIG_CHR,              /*!< \brief Configruation characteristic declaration. */
-  TEMP_HANDLE_CONFIG,                  /*!< \brief Configruation characteristic value. */
-  TEMP_HANDLE_CONFIG_CHR_USR_DESCR,    /*!< \brief Configruation characteristic user description. */
+  TEMP_HANDLE_CONFIG_CHR,              /*!< \brief Configuration characteristic declaration. */
+  TEMP_HANDLE_CONFIG,                  /*!< \brief Configuration characteristic value. */
+  TEMP_HANDLE_CONFIG_CHR_USR_DESCR,    /*!< \brief Configuration characteristic user description. */
 
   TEMP_HANDLE_PERIOD_CHR,              /*!< \brief Period characteristc declaration. */
   TEMP_HANDLE_PERIOD,                  /*!< \brief Period characteristc value. */

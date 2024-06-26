@@ -123,7 +123,7 @@ extern "C"
 
 /*! \brief Mesh Control Opcode bit mask */
 #define MESH_CTL_OPCODE_MASK                        0x7F
-/*! \brief Mesh Contol Opcode shift value */
+/*! \brief Mesh Control Opcode shift value */
 #define MESH_CTL_OPCODE_SHIFT                       0
 /*! \brief Mesh Control Opcode field size bits */
 #define MESH_CTL_OPCODE_SIZE                        7
@@ -274,7 +274,7 @@ extern "C"
 #define MESH_GATT_PROXY_PDU_MIN_VALUE               20
 /*! \brief Minimum value for Mesh ADV PDU size */
 #define MESH_ADV_IF_PDU_MIN_VALUE                   0x02
-/*! \brief Maxium value for Mesh ADV PDU size */
+/*! \brief Maximum value for Mesh ADV PDU size */
 #define MESH_ADV_IF_PDU_MAX_VALUE                   0x1F
 
 /*! \brief Maximum number of steps for Model Publication Publish Period state */

@@ -36,7 +36,7 @@ FLASH_SIZE = 0x00080000; /* 512kB Flash */
 
 BOOTLOADER_SIZE = 0x8000; /* 32k for flash bootloader */
 BOOTMEM_SIZE = 0x40; /* 64 bytes of memory for flash bootloader */
-ROM_BL_PAGE_SIZE = 0x2000; /* Last page is used by ROM bootlaoder */
+ROM_BL_PAGE_SIZE = 0x2000; /* Last page is used by ROM bootloader */
 MAINAPP_SIZE = FLASH_SIZE - BOOTLOADER_SIZE - BOOTMEM_SIZE - ROM_BL_PAGE_SIZE;
 
 BOOTLOADER_ORIGIN = FLASH_ORIGIN;
@@ -155,7 +155,7 @@ SECTIONS {
     {
         . = ALIGN(4);
         _bss = .;
-        *(.bss*)     /*read-write zero initialized data: uninitialzed global variable*/
+        *(.bss*)     /*read-write zero initialized data: uninitialized global variable*/
         *(COMMON)
         _ebss = ALIGN(., 4);
     } > SRAM
@@ -166,7 +166,7 @@ SECTIONS {
         _shared = .;
         *(.mailbox*)
         . = ALIGN(4);
-        *(.shared*)     /*read-write zero initialized data: uninitialzed global variable*/
+        *(.shared*)     /*read-write zero initialized data: uninitialized global variable*/
         _eshared = ALIGN(., 4);
     } > SRAM
     __shared_data = LOADADDR(.shared);

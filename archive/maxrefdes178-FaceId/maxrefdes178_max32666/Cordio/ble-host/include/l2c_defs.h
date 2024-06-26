@@ -68,7 +68,7 @@ extern "C" {
 #define L2C_SIG_DISCONN_RSP_LEN       4   /*!< \brief Disconnection response length. */
 #define L2C_SIG_LE_CONN_REQ_LEN       10  /*!< \brief LE connection request length. */
 #define L2C_SIG_LE_CONN_RSP_LEN       10  /*!< \brief LE connection response length. */
-#define L2C_SIG_FLOW_CTRL_CREDIT_LEN  4   /*!< \brief Flow control credit lenghth. */
+#define L2C_SIG_FLOW_CTRL_CREDIT_LEN  4   /*!< \brief Flow control credit length. */
 #define L2C_SIG_EN_CONNECT_REQ_LEN    8   /*!< \brief Enhanced credit based connection request */
 #define L2C_SIG_EN_CONNECT_RSP_LEN    8   /*!< \brief Enhanced credit based connection response */
 #define L2C_SIG_EN_RECONFIG_REQ_LEN   4   /*!< \brief Enhanced credit based reconfiguration request */
@@ -88,7 +88,7 @@ extern "C" {
  *
  */
 /**@{*/
-#define L2C_SIG_CMD_REJ               0x01      /*!< \brief Comand reject */
+#define L2C_SIG_CMD_REJ               0x01      /*!< \brief Command reject */
 #define L2C_SIG_DISCONNECT_REQ        0x06      /*!< \brief Disconnect request */
 #define L2C_SIG_DISCONNECT_RSP        0x07      /*!< \brief Disconnect response */
 #define L2C_SIG_CONN_UPDATE_REQ       0x12      /*!< \brief Connection parameter update request */
@@ -140,7 +140,7 @@ extern "C" {
 #define L2C_CONN_FAIL_INVALID_PARAM   0x000C    /*!< \brief Connection refused invalid parameters */
 /**@}*/
 
-/** \name L2CAP Interal Connection Result Codes
+/** \name L2CAP Internal Connection Result Codes
  * Proprietary codes not sent in any L2CAP packet.
  */
 /**@{*/

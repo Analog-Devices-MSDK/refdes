@@ -224,7 +224,7 @@ static const uint16_t dmEvtCbackLen[] =
   sizeof(hciVendorSpecEvt_t)                   /* DM_VENDOR_SPEC_IND */
 };
 
-/* Default component function inteface */
+/* Default component function interface */
 static const dmFcnIf_t dmFcnDefault =
 {
   dmEmptyReset,

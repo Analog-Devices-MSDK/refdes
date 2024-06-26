@@ -125,7 +125,7 @@ static const attCfg_t cyclingAttCfg =
 {
   15,                               /* ATT server service discovery connection idle timeout in seconds */
   CYCLING_DEFAULT_MTU,              /* desired ATT MTU */
-  ATT_MAX_TRANS_TIMEOUT,            /* transcation timeout in seconds */
+  ATT_MAX_TRANS_TIMEOUT,            /* transaction timeout in seconds */
   4                                 /* number of queued prepare writes supported by server */
 };
 

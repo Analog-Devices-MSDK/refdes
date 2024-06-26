@@ -144,7 +144,7 @@ static void smpL2cCtrlCback(wsfMsgHdr_t *pMsg)
     /* if data flow enabled */
     if (!pCcb->flowDisabled)
     {
-      /* if packet in qeueue */
+      /* if packet in queue */
       if (pCcb->pQueued != NULL)
       {
         /* send queued packet */
@@ -166,7 +166,7 @@ static void smpL2cCtrlCback(wsfMsgHdr_t *pMsg)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Called to resume attempts state if a disconnect and reconnect occured while in the
+ *  \brief  Called to resume attempts state if a disconnect and reconnect occurred while in the
  *          attempts state.
  *
  *  \param  connId  Connection ID to prevent pairing.
@@ -419,7 +419,7 @@ void smpCalcC1Part2(smpCcb_t *pCcb, uint8_t *pKey, uint8_t *pPart1)
   uint8_t   *pIaddr;
   uint8_t   *pRaddr;
 
-  /* set initiator/responder addresss */
+  /* set initiator/responder address */
   if (pCcb->initiator)
   {
     /* use local device's RPA */

@@ -184,7 +184,7 @@ void lctrCleanupCtx(lctrCisCtx_t *pCisCtx)
       }
     }
 
-    /* CIG is removed through host command, unless resetted. */
+    /* CIG is removed through host command, unless reset. */
 
     if ((lctrResetEnabled == TRUE))
     {

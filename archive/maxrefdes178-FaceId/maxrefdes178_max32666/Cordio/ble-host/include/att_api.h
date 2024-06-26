@@ -76,7 +76,7 @@ extern "C" {
 /*! \addtogroup STACK_ATTC_API
  *  \{ */
 /** \name ATT Client Discovery and Configuration Settings
- * Settings used to configurate ATT Discovery procedure for ATT Clients.
+ * Settings used to configure ATT Discovery procedure for ATT Clients.
  */
 /**@{*/
 #define ATTC_SET_UUID_128                0x01    /*!< \brief Set if the UUID is 128 bits in length */
@@ -149,7 +149,7 @@ typedef struct
 {
   wsfTimerTicks_t   discIdleTimeout;  /*!< \brief ATT server service discovery connection idle timeout in seconds */
   uint16_t          mtu;              /*!< \brief desired ATT MTU */
-  uint8_t           transTimeout;     /*!< \brief transcation timeout in seconds */
+  uint8_t           transTimeout;     /*!< \brief transaction timeout in seconds */
   uint8_t           numPrepWrites;    /*!< \brief number of queued prepare writes supported by server */
 } attCfg_t;
 
@@ -358,9 +358,9 @@ typedef struct
 /*! \brief ATT client discovery control block */
 typedef struct
 {
-  attcDiscChar_t        **pCharList;  /*!< \brief Characterisic list for discovery */
+  attcDiscChar_t        **pCharList;  /*!< \brief Characteristic list for discovery */
   uint16_t              *pHdlList;    /*!< \brief Characteristic handle list */
-  attcDiscCfg_t         *pCfgList;    /*!< \brief Characterisic list for configuration */
+  attcDiscCfg_t         *pCfgList;    /*!< \brief Characteristic list for configuration */
   uint8_t               charListLen;  /*!< \brief Characteristic and handle list length */
   uint8_t               cfgListLen;   /*!< \brief Configuration list length */
 

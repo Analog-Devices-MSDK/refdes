@@ -707,7 +707,7 @@ void wsfOsInit(uint8_t msPerTick, uint16_t bufMemLen, uint8_t *pBufMem,
   /* block until thread starts */
   while (wsfOs.task.state != WSF_TASK_STATE_STARTED)
   {
-    /* yeild this task */
+    /* yield this task */
     Sleep(1);
   }
 
@@ -735,7 +735,7 @@ void wsfOsShutdown(void)
   /* block until task terminates */
   while (wsfOs.timerTaskState != WSF_TASK_STATE_FREE)
   {
-    /* yeild this task */
+    /* yield this task */
     Sleep(1);
   }
 
@@ -746,7 +746,7 @@ void wsfOsShutdown(void)
   /* block until thread terminate */
   while (wsfOs.task.state != WSF_TASK_STATE_FREE)
   {
-    /* yeild this task */
+    /* yield this task */
     Sleep(1);
   }
 

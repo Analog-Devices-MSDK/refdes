@@ -519,7 +519,7 @@ void attsCheckPendDbHashReadRsp(void)
  *        Characteristic Declaration and Characteristic Extended Properties which contribute their
  *        ATT handle, ATT type and ATT value. Hashable attributes also include Characteristic User
  *        Description, Client Characteristic Configuration, Server Characteristic Configuration,
- *        Characteristic Format, and Characteristic Aggreate Format which contribute their ATT
+ *        Characteristic Format, and Characteristic Aggregate Format which contribute their ATT
  *        handle and ATT type.
  */
 /*************************************************************************************************/

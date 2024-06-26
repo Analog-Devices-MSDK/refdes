@@ -184,7 +184,7 @@ static const attsAttr_t glsList[] =
     0,
     GLS_SEC_PERMIT_READ
   },
-  /* Record access control point characteristic delclaration */
+  /* Record access control point characteristic declaration */
   {
     attChUuid,
     (uint8_t *) glsValRacpCh,

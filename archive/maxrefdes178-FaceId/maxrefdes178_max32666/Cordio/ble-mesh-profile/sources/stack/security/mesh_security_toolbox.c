@@ -333,7 +333,7 @@ static void meshSecToolKxCmacCback(const uint8_t *pCmacResult, void *pParam)
 
   if (pTemp == NULL)
   {
-    /* Shoud never happen */
+    /* Should never happen */
     WSF_ASSERT(pTemp != NULL);
     return;
   }
@@ -1317,7 +1317,7 @@ meshSecToolRetVal_t MeshSecToolEccGenerateKey(meshSecToolEccKeyGenCback_t eccKey
  *
  *  \see       meshSecToolEcdhCback_t
  *
- *  \retval    MESH_SUCCESS                  Request processed succesfully.
+ *  \retval    MESH_SUCCESS                  Request processed successfully.
  *  \retval    MESH_SEC_TOOL_INVALID_PARAMS  Invalid parameters in request.
  *  \retval    MESH_SEC_TOOL_OUT_OF_MEMORY   No resources to process request.
  *  \retval    MESH_SEC_TOOL_UNINITIALIZED   The algorithm used by this request is not initialized.
@@ -1376,7 +1376,7 @@ meshSecToolRetVal_t MeshSecToolEccCompSharedSecret(const uint8_t *pPeerPubX,
  *  \param[in] saltCback     Callback invoked after salt is generated.
  *  \param[in] pParam        Pointer to generic callback parameter.
  *
- *  \retval    MESH_SUCCESS                  Request processed succesfully.
+ *  \retval    MESH_SUCCESS                  Request processed successfully.
  *  \retval    MESH_SEC_TOOL_INVALID_PARAMS  Invalid parameters in request.
  *  \retval    MESH_SEC_TOOL_OUT_OF_MEMORY   No resources to process request.
  *  \retval    MESH_SEC_TOOL_UNINITIALIZED   The algorithm used by this request is not initialized.
@@ -1417,7 +1417,7 @@ meshSecToolRetVal_t MeshSecToolGenerateSalt(uint8_t *pPlainText, uint16_t plainT
  *
  *  \see       meshSecToolKeyDerivationCback_t
  *
- *  \retval    MESH_SUCCESS                  Request processed succesfully.
+ *  \retval    MESH_SUCCESS                  Request processed successfully.
  *  \retval    MESH_SEC_TOOL_INVALID_PARAMS  Invalid parameters in request.
  *  \retval    MESH_SEC_TOOL_OUT_OF_MEMORY   No resources to process request.
  *  \retval    MESH_SEC_TOOL_UNINITIALIZED   The algorithm used by this request is not initialized.
@@ -1470,7 +1470,7 @@ meshSecToolRetVal_t MeshSecToolK1Derive(uint8_t *pPlainText, uint16_t plainTextS
  *
  *  \see       meshSecToolKeyDerivationCback_t
  *
- *  \retval    MESH_SUCCESS                  Request processed succesfully.
+ *  \retval    MESH_SUCCESS                  Request processed successfully.
  *  \retval    MESH_SEC_TOOL_INVALID_PARAMS  Invalid parameters in request.
  *  \retval    MESH_SEC_TOOL_OUT_OF_MEMORY   No resources to process request.
  *  \retval    MESH_SEC_TOOL_UNINITIALIZED   The algorithm used by this request is not initialized.
@@ -1523,7 +1523,7 @@ meshSecToolRetVal_t MeshSecToolK2Derive(uint8_t *pPlainText, uint16_t plainTextS
  *
  *  \see       meshSecToolKeyDerivationCback_t
  *
- *  \retval    MESH_SUCCESS                  Request processed succesfully.
+ *  \retval    MESH_SUCCESS                  Request processed successfully.
  *  \retval    MESH_SEC_TOOL_INVALID_PARAMS  Invalid parameters in request.
  *  \retval    MESH_SEC_TOOL_OUT_OF_MEMORY   No resources to process request.
  *  \retval    MESH_SEC_TOOL_UNINITIALIZED   The algorithm used by this request is not initialized.
@@ -1569,7 +1569,7 @@ meshSecToolRetVal_t MeshSecToolK3Derive(uint8_t *pPlainText,
  *
  *  \see       meshSecToolKeyDerivationCback_t
  *
- *  \retval    MESH_SUCCESS                  Request processed succesfully.
+ *  \retval    MESH_SUCCESS                  Request processed successfully.
  *  \retval    MESH_SEC_TOOL_INVALID_PARAMS  Invalid parameters in request.
  *  \retval    MESH_SEC_TOOL_OUT_OF_MEMORY   No resources to process request.
  *  \retval    MESH_SEC_TOOL_UNINITIALIZED   The algorithm used by this request is not initialized.

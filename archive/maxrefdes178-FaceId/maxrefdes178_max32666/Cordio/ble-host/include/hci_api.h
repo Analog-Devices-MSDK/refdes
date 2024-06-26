@@ -485,7 +485,7 @@ typedef struct
   uint16_t            supportedMaxRxTime;   /*!< \brief Supported maximum Rx time. */
 } hciLeReadMaxDataLenEvt_t;
 
-/*! \brief LE remote connetion parameter request event */
+/*! \brief LE remote connection parameter request event */
 typedef struct
 {
   wsfMsgHdr_t         hdr;         /*!< \brief Event header. */
@@ -702,7 +702,7 @@ typedef struct
   uint16_t            cisHandle;            /*!< \brief CIS connection handle. */
   uint32_t            cigSyncDelayUsec;     /*!< \brief CIG synchronization delay in usec. */
   uint32_t            cisSyncDelayUsec;     /*!< \brief CIS synchronization delay in usec. */
-  uint32_t            transLatMToSUsec;     /*!< \brief The maximum time, in msec, for transmission of SDUs of all CISes from mater to slave. */
+  uint32_t            transLatMToSUsec;     /*!< \brief The maximum time, in msec, for transmission of SDUs of all CISes from master to slave. */
   uint32_t            transLatSToMUsec;     /*!< \brief The maximum time, in msec, for transmission of SDUs of all CISes from slave to master. */
   uint8_t             phyMToS;              /*!< \brief Master to slave PHY. */
   uint8_t             phySToM;              /*!< \brief Slave to master PHY. */
@@ -1234,7 +1234,7 @@ typedef void (*hciIsoCback_t)(uint8_t *pData);
 
 /*! \brief HCI flow control callback type
  *
- *  This callback function manages flow control in the TX path betrween the stack and HCI.
+ *  This callback function manages flow control in the TX path between the stack and HCI.
  *
  *  \param  connId          Connection handle.
  *  \param  flowDisabled    TRUE if flow is disabled.
@@ -1747,7 +1747,7 @@ void HciLeReadChanMapCmd(uint16_t handle);
 
 /*************************************************************************************************/
 /*!
- *  \brief  HCI LE read local supported feautre command.
+ *  \brief  HCI LE read local supported feature command.
  *
  *  \return None.
  */
@@ -2793,7 +2793,7 @@ void HciLeSetCigParamsCmd(HciCisCigParams_t *pCigParam);
 /*!
  *  \brief      HCI LE create CIS command.
  *
- *  \param      numCis            Nunber of CISes.
+ *  \param      numCis            Number of CISes.
  *  \param      pCreateCisParam   Parameters for creating connected isochronous stream.
  *
  *  \return     None.
@@ -2828,7 +2828,7 @@ void HciLeRejectCisReqCmd(uint16_t connHandle, uint8_t reason);
 /*!
  *  \brief      HCI LE remove CIG command.
  *
- *  \param      cigId        Identifer of a CIG.
+ *  \param      cigId        Identifier of a CIG.
  *
  *  \return     None.
  */

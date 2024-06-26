@@ -219,7 +219,7 @@ static char uiLcdAlphaNumNextChar(const UiDialog_t *pDialog, bool_t up)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Process a key press from the user - Numeric or alpha-numeric dialog screens
+ *  \brief  Process a key press from the user - Numeric or alphanumeric dialog screens
  *
  *  \param  key     User keypress.
  *
@@ -380,7 +380,7 @@ static void uiLcdScrollCallback(void)
   {
     UiMenu_t *pMenu = (UiMenu_t *) UiCb.pActiveScreen;
 
-    /* scroll the higlighted menu item if necessary */
+    /* scroll the highlighted menu item if necessary */
     if (++uiLcdCb.scrollOffset > (int8_t) (strlen(pMenu->pItems[pMenu->highlight]) - (LCD_LINE_LEN - LCD_SEL_COL_WIDTH)))
     {
       uiLcdCb.scrollOffset = 0;
@@ -465,7 +465,7 @@ static void appCalcFirstAndLastItem(int8_t *pStart, int8_t *pEnd, uint8_t numLin
 {
   int8_t start, end;
 
-  /* Assume the highligh will be in the center */
+  /* Assume the highlight will be in the center */
   start = highlight - (numLines - 1) / 2;
 
   /* If centering the highlight puts the start below zero, start at the beginning */
@@ -483,7 +483,7 @@ static void appCalcFirstAndLastItem(int8_t *pStart, int8_t *pEnd, uint8_t numLin
     end = numItems;
 
     /* The last item should be as close to the bottom of the screen as possible */
-    /* Adjust the start to accomodate this */
+    /* Adjust the start to accommodate this */
     start = end - numLines;
 
     if (start < 0)

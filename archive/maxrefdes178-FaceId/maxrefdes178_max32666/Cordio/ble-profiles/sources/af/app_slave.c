@@ -56,7 +56,7 @@
 #define APP_CU_STATE_UPDATING           2
 
 /**************************************************************************************************
-  Golbal Variables
+  Global Variables
 **************************************************************************************************/
 
 /* Slave control block */
@@ -205,7 +205,7 @@ static void appSetAdvScanDataFrag(uint8_t advHandle, uint8_t location)
   pAdvData = appSlaveCb.pAdvData[advHandle][location];
   remainLen = appSlaveCb.advDataLen[advHandle][location] - appSlaveCb.advDataOffset[advHandle][location];
 
-  /* if remaing data length > max adv data length supported by Controller */
+  /* if remaining data length > max adv data length supported by Controller */
   if (remainLen > appSlaveCb.maxAdvDataLen[advHandle])
   {
     remainLen = appSlaveCb.maxAdvDataLen[advHandle];
@@ -214,7 +214,7 @@ static void appSetAdvScanDataFrag(uint8_t advHandle, uint8_t location)
   /* while there remains data to be sent */
   while (remainLen > 0)
   {
-    /* if remaing data length > max length of extended advertising data (per set adv data command) */
+    /* if remaining data length > max length of extended advertising data (per set adv data command) */
     if (remainLen > HCI_EXT_ADV_DATA_LEN)
     {
       /* data needs to be fragmented */

@@ -211,7 +211,7 @@ void smpiActProcPairCnf(smpCcb_t *pCcb, smpMsg_t *pMsg)
 
 /*************************************************************************************************/
 /*!
- *  \brief  Verify the calculated confirm value.  If ok, proceed with STK calculcation.
+ *  \brief  Verify the calculated confirm value.  If ok, proceed with STK calculation.
  *
  *  \param  pCcb  Connection control block.
  *  \param  pMsg  State machine message.

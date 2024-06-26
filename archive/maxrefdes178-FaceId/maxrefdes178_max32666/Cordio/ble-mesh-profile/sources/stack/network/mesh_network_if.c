@@ -220,7 +220,7 @@ void meshNwkIfAddInterface(meshBrInterfaceId_t brIfId, meshBrType_t brIfType)
  *
  *  \return    None.
  *
- *  \remarks   brIfId sanity check occurs prior to this function beeing called.
+ *  \remarks   brIfId sanity check occurs prior to this function being called.
  */
 /*************************************************************************************************/
 void meshNwkIfRemoveInterface(meshBrInterfaceId_t brIfId)

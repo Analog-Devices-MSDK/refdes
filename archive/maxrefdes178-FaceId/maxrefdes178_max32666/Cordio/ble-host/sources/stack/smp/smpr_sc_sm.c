@@ -91,10 +91,10 @@ enum
   SMPR_SC_ACT_CALC_F6_EB,           /*!< Process Calculate Eb */
   SMPR_SC_ACT_SEND_DH_CHECK,        /*!< Process Send DH Key Check */
 
-  SMPR_SC_ACT_PROC_PAIR_CNF_CALC_1, /*!< Process Confirm Value Calcuation 1 */
+  SMPR_SC_ACT_PROC_PAIR_CNF_CALC_1, /*!< Process Confirm Value Calculation 1 */
   SMPR_SC_ACT_CNF_VERIFY,           /*!< Process Confirm Value Verification */
   SMPR_SC_ACT_SEND_PAIR_RANDOM,     /*!< Process Send Random Value */
-  SMPR_SC_ACT_SETUP_KEY_DIST,       /*!< Processs Setup Key Distribution */
+  SMPR_SC_ACT_SETUP_KEY_DIST,       /*!< Process Setup Key Distribution */
   SMPR_SC_ACT_RCV_KEY,              /*!< Process Received Key */
   SMPR_SC_ACT_SEND_KEY              /*!< Process Send Key */
 };

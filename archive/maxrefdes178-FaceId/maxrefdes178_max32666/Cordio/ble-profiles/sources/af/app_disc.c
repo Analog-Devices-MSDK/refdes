@@ -48,7 +48,7 @@
   Data Types
 **************************************************************************************************/
 
-/*! \brief Application Discovery controler block */
+/*! \brief Application Discovery controller block */
 typedef struct
 {
   attcDiscCb_t    *pDiscCb;                 /*! ATT discovery control block */
@@ -744,7 +744,7 @@ void AppDiscComplete(dmConnId_t connId, uint8_t status)
  *  \param  uuidLen   Length of UUID (2 or 16).
  *  \param  pUuid     Pointer to UUID data.
  *  \param  listLen   Length of characteristic and handle lists.
- *  \param  pCharList Characterisic list for discovery.
+ *  \param  pCharList Characteristic list for discovery.
  *  \param  pHdlList  Characteristic handle list.
  *
  *  \return None.

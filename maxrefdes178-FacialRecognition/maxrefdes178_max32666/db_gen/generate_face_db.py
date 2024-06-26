@@ -69,7 +69,7 @@ def create_db_from_folder(args):
 
 def parse_arguments():
     """
-    Function to parse comman line arguments.
+    Function to parse command line arguments.
     """
     parser = argparse.ArgumentParser(description='Create embedding database file.')
     parser.add_argument('--db', '-db-path', type=str, default='db',
