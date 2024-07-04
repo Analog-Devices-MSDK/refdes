@@ -1,61 +1,53 @@
-/*******************************************************************************
- * Copyright (C) 2020-2021 Maxim Integrated Products, Inc., All rights Reserved.
+/******************************************************************************
  *
- * This software is protected by copyright laws of the United States and
- * of foreign countries. This material may also be protected by patent laws
- * and technology transfer regulations of the United States and of foreign
- * countries. This software is furnished under a license agreement and/or a
- * nondisclosure agreement and may only be used or reproduced in accordance
- * with the terms of those agreements. Dissemination of this information to
- * any party or parties not specified in the license agreement and/or
- * nondisclosure agreement is expressly prohibited.
+ * Copyright (C) 2022-2023 Maxim Integrated Products, Inc. (now owned by 
+ * Analog Devices, Inc.),
+ * Copyright (C) 2023-2024 Analog Devices, Inc.
  *
- * The above copyright notice and this permission notice shall be included
- * in all copies or substantial portions of the Software.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- * IN NO EVENT SHALL MAXIM INTEGRATED BE LIABLE FOR ANY CLAIM, DAMAGES
- * OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
- * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- * OTHER DEALINGS IN THE SOFTWARE.
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
- * Except as contained in this notice, the name of Maxim Integrated
- * Products, Inc. shall not be used except as stated in the Maxim Integrated
- * Products, Inc. Branding Policy.
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  *
- * The mere transfer of this software does not imply any licenses
- * of trade secrets, proprietary technology, copyrights, patents,
- * trademarks, maskwork rights, or any other form of intellectual
- * property whatsoever. Maxim Integrated Products, Inc. retains all
- * ownership rights.
- *******************************************************************************
+ ******************************************************************************/
+
+/*
+ * This header file was automatically generated for the cats-dogs network from a template.
+ * Please do not edit; instead, edit the template and regenerate.
  */
 
 #ifndef _MAX78000_VIDEO_CNN_H_
 #define _MAX78000_VIDEO_CNN_H_
 
-//-----------------------------------------------------------------------------
-// Includes
-//-----------------------------------------------------------------------------
 #include <stdint.h>
 typedef int32_t q31_t;
 typedef int16_t q15_t;
 
 
 
-//-----------------------------------------------------------------------------
-// Defines
-//-----------------------------------------------------------------------------
 /*
   SUMMARY OF OPS
-  Hardware: 56,295,040 ops (55,234,560 macc; 1,052,800 comp; 7,680 add; 0 mul; 0 bitwise)
+  Hardware: 51,368,960 ops (50,432,000 macc; 936,960 comp; 0 add; 0 mul; 0 bitwise)
+    Layer 0: 7,340,032 ops (7,077,888 macc; 262,144 comp; 0 add; 0 mul; 0 bitwise)
+    Layer 1: 19,267,584 ops (18,874,368 macc; 393,216 comp; 0 add; 0 mul; 0 bitwise)
+    Layer 2: 19,070,976 ops (18,874,368 macc; 196,608 comp; 0 add; 0 mul; 0 bitwise)
+    Layer 3: 4,792,320 ops (4,718,592 macc; 73,728 comp; 0 add; 0 mul; 0 bitwise)
+    Layer 4: 600,064 ops (589,824 macc; 10,240 comp; 0 add; 0 mul; 0 bitwise)
+    Layer 5: 295,936 ops (294,912 macc; 1,024 comp; 0 add; 0 mul; 0 bitwise)
+    Layer 6: 2,048 ops (2,048 macc; 0 comp; 0 add; 0 mul; 0 bitwise)
 
   RESOURCE USAGE
-  Weight memory: 176,048 bytes out of 442,368 bytes total (40%)
-  Bias memory:   0 bytes out of 2,048 bytes total (0%)
+  Weight memory: 57,776 bytes out of 442,368 bytes total (13.1%)
+  Bias memory:   2 bytes out of 2,048 bytes total (0.1%)
 */
+
 /* Number of outputs for this network */
 #define CNN_NUM_OUTPUTS 2
 
@@ -63,6 +55,7 @@ typedef int16_t q15_t;
 #define CNN_INFERENCE_TIMER MXC_TMR0
 
 /* Port pin actions used to signal that processing is active */
+
 #define CNN_START
 #define CNN_COMPLETE
 #define SYS_START

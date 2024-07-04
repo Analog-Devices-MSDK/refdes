@@ -1,37 +1,22 @@
-/*******************************************************************************
- * Copyright (C) 2020-2021 Maxim Integrated Products, Inc., All rights Reserved.
+/******************************************************************************
  *
- * This software is protected by copyright laws of the United States and
- * of foreign countries. This material may also be protected by patent laws
- * and technology transfer regulations of the United States and of foreign
- * countries. This software is furnished under a license agreement and/or a
- * nondisclosure agreement and may only be used or reproduced in accordance
- * with the terms of those agreements. Dissemination of this information to
- * any party or parties not specified in the license agreement and/or
- * nondisclosure agreement is expressly prohibited.
+ * Copyright (C) 2020-2023 Maxim Integrated Products, Inc. (now owned by 
+ * Analog Devices, Inc.),
+ * Copyright (C) 2023-2024 Analog Devices, Inc.
  *
- * The above copyright notice and this permission notice shall be included
- * in all copies or substantial portions of the Software.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- * IN NO EVENT SHALL MAXIM INTEGRATED BE LIABLE FOR ANY CLAIM, DAMAGES
- * OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
- * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- * OTHER DEALINGS IN THE SOFTWARE.
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
- * Except as contained in this notice, the name of Maxim Integrated
- * Products, Inc. shall not be used except as stated in the Maxim Integrated
- * Products, Inc. Branding Policy.
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  *
- * The mere transfer of this software does not imply any licenses
- * of trade secrets, proprietary technology, copyrights, patents,
- * trademarks, maskwork rights, or any other form of intellectual
- * property whatsoever. Maxim Integrated Products, Inc. retains all
- * ownership rights.
- *******************************************************************************
- */
+ ******************************************************************************/
 
 //-----------------------------------------------------------------------------
 // Includes
@@ -63,8 +48,8 @@
 
 //#define PRINT_TIME_CNN
 
-#define CATS_DOGS_HEIGHT 192
-#define CATS_DOGS_WIDTH 192
+#define CATS_DOGS_HEIGHT 128
+#define CATS_DOGS_WIDTH 128
 //-----------------------------------------------------------------------------
 // Typedefs
 //-----------------------------------------------------------------------------
@@ -667,6 +652,48 @@ static void run_demo(void)
     }
 }
 
+static void load_input_camera(int x_offset, int y_offset)
+{
+
+    uint8_t *data;
+    uint8_t *raw;
+    uint8_t ur, ug, ub;
+    int8_t r, g, b;
+    uint32_t number;
+    uint32_t w, h;
+    PR_DEBUG("load_input_camera");
+    camera_get_image(&raw, &number, &w, &h);
+
+	// Read 240x240 pixels, pick one out of 3 pixels with offset (9,9) to make 74x74 CNN input
+	// CNN needs RGB888, pack into 32bit word
+
+        for (int i = y_offset; i < CATS_DOGS_HEIGHT + y_offset; i++) {
+            //PR_INFO("i=%d",i);
+        data = raw + (((LCD_HEIGHT - CATS_DOGS_HEIGHT) / 2) + i) * LCD_WIDTH * LCD_BYTE_PER_PIXEL;  // down
+        data += ((LCD_WIDTH - CATS_DOGS_WIDTH) / 2) * LCD_BYTE_PER_PIXEL;  // right
+        //data += ((FACEDETECTION_HEIGHT - FACEDETECTION_WIDTH) / 2) * LCD_BYTE_PER_PIXEL;  // right
+
+        for(int j = x_offset; j < CATS_DOGS_WIDTH + x_offset; j++) {
+            //PR_INFO("j=%d",j);
+            // RGB565, |RRRRRGGG|GGGBBBBB|
+            ub = (data[j * LCD_BYTE_PER_PIXEL + 1] << 3);
+            ug = ((data[j * LCD_BYTE_PER_PIXEL] << 5) | ((data[j * LCD_BYTE_PER_PIXEL + 1] & 0xE0) >> 3));
+            ur = (data[j * LCD_BYTE_PER_PIXEL] & 0xF8);
+            b = ub - 128;
+            g = ug - 128;
+            r = ur - 128;
+            //PR_INFO("r=%d",r);
+            // Loading data into the CNN fifo
+            while (((*((volatile uint32_t *) 0x50000004) & 1)) != 0); // Wait for FIFO 0
+
+            number = 0x00FFFFFF & ((((uint8_t)b) << 16) | (((uint8_t)g) << 8) | ((uint8_t) r));
+
+            *((volatile uint32_t *) 0x50000008) = number; // Write FIFO 0
+        }
+    }
+	//PR_INFO("Total samples: %d", cnt);
+}
+
 static void send_img(void)
 {
     uint8_t   *raw;
@@ -682,15 +709,9 @@ static void send_img(void)
 
 static void run_cnn(int x_offset, int y_offset)
 {
-    uint8_t *data;
-    uint8_t *raw;
-    uint8_t ur, ug, ub;
-    int8_t r, g, b;
-    uint32_t number;
-    uint32_t w, h;
 
     // Get the details of the image from the camera driver.
-    camera_get_image(&raw, &number, &w, &h);
+    //camera_get_image(&raw, &number, &w, &h);
 
 #ifdef PRINT_TIME_CNN
     uint32_t pass_time = GET_RTC_MS();
@@ -711,58 +732,8 @@ static void run_cnn(int x_offset, int y_offset)
     pass_time = GET_RTC_MS();
 #endif
 
-    uint32_t r32=0, g32=0, b32=0;
-    int cnt = 3;
+    load_input_camera(0, 0);
 
-    r32 = 0;
-	g32 = 0;
-	b32 = 0;
-	cnt = 3;
-
-	// Read 192x192, pick one out of 3 pixels to make it 64x64
-	// CNN needs RGB888, pack for bytes into 1 int for each color
-    for (int i = y_offset; i < CATS_DOGS_HEIGHT + y_offset; i+=3) {
-        data = raw + (((LCD_HEIGHT - CATS_DOGS_HEIGHT) / 2) + i) * LCD_WIDTH * LCD_BYTE_PER_PIXEL;  // down
-        data += ((LCD_WIDTH - CATS_DOGS_WIDTH) / 2) * LCD_BYTE_PER_PIXEL;  // right
-
-        for(int j = x_offset; j < CATS_DOGS_WIDTH + x_offset; j+=3) {
-
-        	// RGB565, |RRRRRGGG|GGGBBBBB|
-            ub = (data[j * LCD_BYTE_PER_PIXEL + 1] << 3);
-            ug = ((data[j * LCD_BYTE_PER_PIXEL] << 5) | ((data[j * LCD_BYTE_PER_PIXEL + 1] & 0xE0) >> 3));
-            ur = (data[j * LCD_BYTE_PER_PIXEL] & 0xF8);
-
-            b = ub - 128;
-            g = ug - 128;
-            r = ur - 128;
-
-            r32 = r32 | ((uint8_t)r << ((cnt)*8));
-            g32 = g32 | ((uint8_t)g << ((cnt)*8));
-            b32 = b32 | ((uint8_t)b << ((cnt)*8));
-
-            // when 4 bytes are packed, write to FIFOs
-            if (cnt == 0)
-			{
-			   while (((*((volatile uint32_t *) 0x50000004) & 1)) != 0); // Wait for FIFO 0
-			   *((volatile uint32_t *) 0x50000008) = r32; // Write FIFO 0
-
-			   while (((*((volatile uint32_t *) 0x50000004) & 2)) != 0); // Wait for FIFO 1
-			   *((volatile uint32_t *) 0x5000000c) = g32; // Write FIFO 1
-
-			   while (((*((volatile uint32_t *) 0x50000004) & 4)) != 0); // Wait for FIFO 2
-			   *((volatile uint32_t *) 0x50000010) = b32; // Write FIFO 2
-
-			   r32 = 0;
-			   g32 = 0;
-			   b32 = 0;
-			   cnt = 3;
-            }
-            else
-            {
-            	cnt--;
-            }
-        }
-    }
 
 
 #ifdef PRINT_TIME_CNN
@@ -828,7 +799,7 @@ static void run_cnn(int x_offset, int y_offset)
 
     char msg[14];
 
-	if (max_result < 60)
+	if (max_result < 80)
 	{
 		classification_result.classification = CLASSIFICATION_UNKNOWN;
 		sprintf(msg,"Unknown  ");

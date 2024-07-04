@@ -1,37 +1,22 @@
-/*******************************************************************************
- * Copyright (C) 2020-2023 Maxim Integrated Products, Inc., All rights Reserved.
+/******************************************************************************
  *
- * This software is protected by copyright laws of the United States and
- * of foreign countries. This material may also be protected by patent laws
- * and technology transfer regulations of the United States and of foreign
- * countries. This software is furnished under a license agreement and/or a
- * nondisclosure agreement and may only be used or reproduced in accordance
- * with the terms of those agreements. Dissemination of this information to
- * any party or parties not specified in the license agreement and/or
- * nondisclosure agreement is expressly prohibited.
+ * Copyright (C) 2020-2023 Maxim Integrated Products, Inc. (now owned by 
+ * Analog Devices, Inc.),
+ * Copyright (C) 2023-2024 Analog Devices, Inc.
  *
- * The above copyright notice and this permission notice shall be included
- * in all copies or substantial portions of the Software.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- * IN NO EVENT SHALL MAXIM INTEGRATED BE LIABLE FOR ANY CLAIM, DAMAGES
- * OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
- * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- * OTHER DEALINGS IN THE SOFTWARE.
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
- * Except as contained in this notice, the name of Maxim Integrated
- * Products, Inc. shall not be used except as stated in the Maxim Integrated
- * Products, Inc. Branding Policy.
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  *
- * The mere transfer of this software does not imply any licenses
- * of trade secrets, proprietary technology, copyrights, patents,
- * trademarks, maskwork rights, or any other form of intellectual
- * property whatsoever. Maxim Integrated Products, Inc. retains all
- * ownership rights.
- *******************************************************************************
- */
+ ******************************************************************************/
 
 #ifndef _MAXREFDES178_DEFINTIIONS_H_
 #define _MAXREFDES178_DEFINTIIONS_H_
@@ -128,15 +113,15 @@
 #define FACEDETECTION_DATA_SIZE            (FACEDETECTION_WIDTH * FACEDETECTION_HEIGHT * LCD_BYTE_PER_PIXEL)
 
 // Common CatsDogs
-#define CATSDOGS_WIDTH                     192
-#define CATSDOGS_HEIGHT                    172
+#define CATSDOGS_WIDTH                     128
+#define CATSDOGS_HEIGHT                    128
 
 #define CATSDOGS_RECTANGLE_X1              ((LCD_WIDTH - CATSDOGS_WIDTH) / 2)
 #define CATSDOGS_RECTANGLE_Y1              ((LCD_HEIGHT - CATSDOGS_HEIGHT) / 2)
 #define CATSDOGS_RECTANGLE_X2              (CATSDOGS_RECTANGLE_X1 + CATSDOGS_WIDTH)
 #define CATSDOGS_RECTANGLE_Y2              (CATSDOGS_RECTANGLE_Y1 + CATSDOGS_HEIGHT)
 
-// Common ASL
+// Common ASL 
 #define ASL_WIDTH                     192
 #define ASL_HEIGHT                    172
 
@@ -532,7 +517,7 @@ typedef enum {
     QSPI_PACKET_TYPE_WEIGHTS_KERNELS57,
     QSPI_PACKET_TYPE_WEIGHTS_KERNELS58,
     QSPI_PACKET_TYPE_WEIGHTS_KERNELS59,
-    QSPI_PACKET_TYPE_WEIGHTS_KERNELS60,
+    QSPI_PACKET_TYPE_WEIGHTS_KERNELS60,                
     QSPI_PACKET_TYPE_WEIGHTS_KERNELS61,
     QSPI_PACKET_TYPE_WEIGHTS_KERNELS62,
     QSPI_PACKET_TYPE_WEIGHTS_KERNELS63,
@@ -564,7 +549,7 @@ typedef enum {
     QSPI_PACKET_TYPE_AUDIO_DEMO_NAME_RES,      // Demo string
 
     QSPI_PACKET_TYPE_FACEDET_VIDEO_DATA_RES, // 224x168 RGB565 Image
-
+    
 	QSPI_PACKET_TYPE_AUDIO_LED_ON_CMD,   // None
 	QSPI_PACKET_TYPE_AUDIO_LED_OFF_CMD,   // None
 
